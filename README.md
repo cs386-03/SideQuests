@@ -25,6 +25,6 @@ Code will be done in HTML, CSS, and JavaScript
 - *Lauren Farr*
 - *Meaghan Freund*
 - *Samantha Madderom*
-- *Maximiliam Poole*
+- *Maximilian Poole*
 - *Caden Tedeschi*
 - *Joshua VanderMeer*
