@@ -6,6 +6,18 @@ Every modern college student and working professional has hundreds of tasks to k
 
 ## 2. Initial value proposition and customer segments
 
+**Initial Value Proposition:**
+SideQuests is an easy to use website that assists in navigating the chaos of life by keeping you on track.
+
+**Customer Segment:**
+- *Teachers*
+- *Students*
+- *Athletes*
+- *Disorganized Individuals*
+- *Extremely Busy People*
+- *People with ADHD*
+- *People with OCD*
+
 ## 3. Interview Summary
 
 ## 4. Final value proposition and consumer segments
