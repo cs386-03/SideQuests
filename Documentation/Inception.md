@@ -165,5 +165,27 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 **Assessment: Must have / Nice to have / Don't care**
 - Didn’t seem he needs this product (Don’t care)
 
+### Interview 7:
+**Summary:** She tends to procrastinate or is surprised with certain assignments she didn’t know about. She doesn’t tend to plan grocery shopping and notices when food runs out the day of.
+
+**Interviewer:** Meaghan Freund\
+**Interviewee:** Lucy Girod\
+**When:** 2/8/2023\
+**Consumer Segments:** Upperclass college students
+
+**Key Insights**
+- In the past, managing certain classes was difficult and did have much of a solution.
+- Procrastinates on doing work a lot and does it at the last minute. 
+- Would lose track of assignments.
+
+**Representative quotes**
+- “I didn’t have any solutions... it kept getting worse.”
+- “I would turn in assignments at 11:30pm [when it was due at 11:59pm].”
+- “[The teacher] wouldn’t tell us if certain things were due.”
+
+**Assessment: Must have / Nice to have / Don't care**
+- Reminders (Nice to have)
+- A checklist (Must have)
+- Calendar (Nice to have)
 
 ## 4. Final value proposition and consumer segments
