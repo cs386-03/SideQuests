@@ -240,7 +240,6 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 **When:** 2/10/2023\
 **Consumer Segments:** Underclass college student
 
-
 **Key Insights**
 - The system seems like a lot of extra work.
 - Can cheat the system by just toggling the task as completed when not done and get the experience points.
