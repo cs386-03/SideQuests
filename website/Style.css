@@ -1,0 +1,106 @@
+/*
+This is the container for the sections
+*/
+div.container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  color: black;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-areas:
+    "head head head"
+    "panleft mainbody panright"
+    "panleft mainbody panright";
+}
+div.header {
+  margin: 30px auto;
+  color: #8DBFC9;
+  text-align: center;                         
+  grid-area: head;  
+  border: 2px solid #8DBFC9;              
+}
+div.footer {
+  margin: 30px;
+  color: #8DBFC9;
+  text-align: center;
+  grid-area: foot;
+  border: 2px solid #8DBFC9;
+}
+div.panel.left {    
+  margin: 30px; 
+  grid-area: panleft;
+  text-align: center;
+  border: 2px solid #8DBFC9;
+}
+div.panel.right {
+  margin: 30px; 
+  grid-area: panright;
+  text-align: center;
+  border: 2px solid #8DBFC9;
+}
+div.mainbody {
+  margin: 30px;
+  color:#8DBFC9;
+  text-align: center;
+  grid-area: mainbody;
+  border: 2px solid #8DBFC9;
+}
+body {
+  background: #16262F;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  height:100%;
+}
+h1, h2 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 2.6em;
+  text-transform: uppercase;
+  color: #8DBFC9;
+}
+
+/*
+general stuff 
+*/
+.p1{
+  font-size: 18px;
+}
+
+/*
+This is the Top Nav Bar stuff
+*/
+div.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+div.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+div.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+div.topnav a.active {
+  background-color: #071A52;
+  color: white;
+}
+button{
+  background-color:#071A52;
+  color: white;
+  height: 50px;
+  width: 200px;
+  font-size: 17px;
+  margin-bottom:10px;
+  display: block;
+}
