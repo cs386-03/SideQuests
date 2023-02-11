@@ -232,3 +232,13 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 - To-do list (Must have)
 - Collection reward system (Nice to have)
 ## 4. Final value proposition and consumer segments
+
+**Final Value Proposition:**
+SideQuests is an easy to use website that assists in navigating the chaos of life with reminders and rewards, praising you for staying on track.
+
+**Customer Segments:**
+- *Teachers*
+- *Students*
+- *Disorganized Individuals*
+- *Extremely Busy People*
+- *People with ADHD*
