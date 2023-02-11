@@ -22,7 +22,7 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 
 ### Interview 1:
 
-**Summary:** Some weeks are good, others are bad. Prefers physical planner. Setting goals and rewards. Struggles to find inexpensive rewards. 
+**Summary:** Some weeks are good, others are bad. Prefers physical planner. Setting goals and rewards. Struggles to find inexpensive rewards.
 
 **Interviewer:** Lauren Farr\
 **Interviewee:** Emalee Rice\
@@ -31,8 +31,8 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 
 **Key Insights**
   - Checking off tasks must be satisfying and fun.
-  - Rewards must not include spending money. 
-  - Accessing the software must be very quick and easy. 
+  - Rewards must not include spending money.
+  - Accessing the software must be very quick and easy.
 
 **Representative quotes**
   - "It happens every couple of weeks where I’m just like, 'I don’t want to do anything.'"
@@ -48,7 +48,7 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 
 ### Interview 2:
 
-**Summary:** Has many responsibilites other than school. Looking for a way to plan meals. Struggles with procrastination and willpower. Likes checklists. 
+**Summary:** Has many responsibilites other than school. Looking for a way to plan meals. Struggles with procrastination and willpower. Likes checklists.
 
 **Interviewer:** Lauren Farr\
 **Interviewee:** Porter Jones\
@@ -59,8 +59,8 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
   - Software must be easy to refer to quickly.
   - Must have a way to seperate tasks into categories.
   - Should remind the user to write things down.
-  - Should help with procrastination and willpower. 
-  
+  - Should help with procrastination and willpower.
+
 **Representative quotes**
   - "I have a church responsibility. I also occasionally attend clubs and stuff. And I have job, yes."
   - "Planning meals, yes, but the actual cooking of the meals is not bad."
@@ -73,10 +73,10 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
   - A checklist feature (Must have)
   - Motivation and rewards (Nice to have)
   - Categories for tasks (Must have)
-  
+
   ### Interview 3:
 
-**Summary:** Thinks she is busy but probably has more downtime. Has lots of classes and other responsibilities, and struggles to get to class on time. 
+**Summary:** Thinks she is busy but probably has more downtime. Has lots of classes and other responsibilities, and struggles to get to class on time.
 
 **Interviewer:** Samantha Madderom\
 **Interviewee:** Briana Pilling\
@@ -90,15 +90,15 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 - “[My solutions to stay on top of things] don’t work.”
 - “[I struggle with] making it to class on time.”
 - “[I spend] about 8 hours a week on my fraternity and 2 hours a week on the Christain club.”
- 
+
 **Assessment: Must have / Nice to have / Don't care**
 - Reminders / alarms (Must have)
 - Calendar (Must have)
 - Rewards (Nice to have)
- 
+
 ### Interview 4:
 
-**Summary:** She has a lot to do, but part of it is not managing time well. She knows starting assignments earlier is better, but it's unsatisfying to start an assignment and not finish it. 
+**Summary:** She has a lot to do, but part of it is not managing time well. She knows starting assignments earlier is better, but it's unsatisfying to start an assignment and not finish it.
 
 **Interviewer:** Samantha Madderom\
 **Interviewee:** Patricia Buckley\
@@ -109,12 +109,12 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 - There are a lot of different tasks to keep track of
 - Be able to write down when things are due, but get reminded to do them before that day
 - Get rewarded for starting a homework assignment as well as finishing it
- 
+
 **Representative quotes**
 - “I work, this semester about 12 hours a week, and then I have 2 Bible studies, and then I have church service, and a meeting for preparing for a retreat.”
 - “I didn’t meal prep this week, so I’m eating out more.”
 - “Part of it is doing a lot, and part of it is not managing my time well.”
- 
+
 **Assessment: Must have / Nice to have / Don't care**
 - Rewards for starting work, not just finishing it (Must have)
 - Reminders (Must have)
@@ -122,17 +122,17 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 
 ### Interview 5:
 
-**Summary:** He deals with a lot of tasks between work and school, Needs a way to organize things effectively. Overall likes the idea. 
+**Summary:** He deals with a lot of tasks between work and school, Needs a way to organize things effectively. Overall likes the idea.
 
 **Interviewer:** Joshua VanderMeer\
 **Interviewee:** Samuel Torres\
 **When:** 2/8/2023\
-**Consumer Segments:** Junior ME major 
+**Consumer Segments:** Junior ME major
 
 **Key Insights**
 - Needs to be able to be used for multiple parts of life.
 - Having a difference between school and work.
-- Having some fun tasks to help keep life fun 
+- Having some fun tasks to help keep life fun
 
 **Representative quotes**
 - “I struggle with keeping up with school and work because I never really know what I need to do.”
@@ -145,16 +145,16 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 - A checklist ( Must Have)
 
 ### Interview 6:
-**Summary:** He was an exchange student, was very on top of school, and did not have to work or cook (lives in the dorms). 
+**Summary:** He was an exchange student, was very on top of school, and did not have to work or cook (lives in the dorms).
 
 **Interviewer:** Joshua VanderMeer\
 **Interviewee:** Xuyang\
 **When:** 2/8/2023\
-**Consumer Segments:** Junior ME major 
+**Consumer Segments:** Junior ME major
 
 **Key Insights**
 - Without a job or other activities school and tasks are easy to manage.
-- Definitely could have a future feature “language stuff”. 
+- Definitely could have a future feature “language stuff”.
 
 **Representative quotes**
 - “I do not really struggle with my classes, I just do them and finish my work”
@@ -175,7 +175,7 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 
 **Key Insights**
 - In the past, managing certain classes was difficult and did have much of a solution.
-- Procrastinates on doing work a lot and does it at the last minute. 
+- Procrastinates on doing work a lot and does it at the last minute.
 - Would lose track of assignments.
 
 **Representative quotes**
@@ -188,4 +188,47 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 - A checklist (Must have)
 - Calendar (Nice to have)
 
+### Interview 8:
+**Summary:** He has a very busy schedule but manages to stay on top of it most of the time by not procrastinating. However, he does think it would be nice to have a planner to set a schedule.
+
+**Interviewer:** Max Poole\
+**Interviewee:** Owen Jones\
+**When:** 2/9/2023\
+**Consumer Segments:** Underclass college students
+
+**Key Insights**
+- When things get busy it is good to have specific end dates in mind for tasks.
+- Staying ahead of things and not procrastinating is important.
+- Competing against friends is a good motivator to get things done.
+
+**Representative quotes**
+- "I just don't procrastinate but a planner would be nice"
+- "Beating my friends would definitely motivate me"
+
+**Assessment: Must have / Nice to have / Don't care**
+- Calendar (Must have)
+- Point Tracker (Nice to have)
+- Definable end dates for tasks (Must have)
+
+### Interview 9:
+**Summary:** Her schedule is very full and she does utilize a schedule to stay on top of it. She likes the idea of being rewarded for completing tasks.
+
+**Interviewer:** Max Poole\
+**Interviewee:**  Dr. Ana Paula Chaves\
+**When:** 2/10/2023\
+**Consumer Segments:** Professors
+
+**Key Insights**
+- Schedules are very useful for staying on track.
+- A reward system is good for people that like to collect.
+- Having a place to see everything that needs to get done is nice.
+
+**Representative quotes**
+- "Competing works well for some people... others prefer collecting to compete against themselves"
+- "Setting intervals to be reminded of tasks is very helpful"
+
+**Assessment: Must have / Nice to have / Don't care**
+- Scheduled reminders (Nice to have)
+- To-do list (Must have)
+- Collection reward system (Nice to have)
 ## 4. Final value proposition and consumer segments
