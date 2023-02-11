@@ -231,6 +231,28 @@ SideQuests is an easy to use website that assists in navigating the chaos of lif
 - Scheduled reminders (Nice to have)
 - To-do list (Must have)
 - Collection reward system (Nice to have)
+
+### Interview 10:
+**Summary:** His schedule is busy but does not use a calendar or schedular. He believes the extra steps to put in the task are a waste of time.
+
+**Interviewer:** Caden Tedeschi\
+**Interviewee:** Tyler Clark\
+**When:** 2/10/2023\
+**Consumer Segments:** Underclass college student
+
+
+**Key Insights**
+- The system seems like a lot of extra work.
+- Can cheat the system by just toggling the task as completed when not done and get the experience points.
+
+**Representative quotes**
+- "I do the same stuff everyday"
+- "If I wasn't so busy I probably would [struggle]"
+- "Too much work to go to an extra website"
+
+**Assessment: Must have / Nice to have / Don't care**
+- He doesn't seem to need this product (Don't Care)
+
 ## 4. Final value proposition and consumer segments
 
 **Final Value Proposition:**
