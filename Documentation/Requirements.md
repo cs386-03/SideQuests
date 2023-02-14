@@ -10,6 +10,8 @@
 
 ## 5. MVP
 - A Minimal Viable Product for this project would include a calendar on an accessable webpage with a few assignable tasks.  This will be tested by having a few people access the webpage and try adding a few tasks for themselves. 
+- Features to validate: pop reminders, assignable tasks, calendar is right, awards can be received for marking a task as complete, anything else?
+- (simple, attainable, measurable)
 
 - how easy are reminders to do on a webpage?
 
