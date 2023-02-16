@@ -3,6 +3,21 @@
 ## 1. Positioning
 
 ## 2. Stakeholders
+**Users/Testers - NAU students**
+
+NAU students and users that test our software will provide input on what the project is missing and how it may be improved. It is best to get a third-party view of what is missing from the website being developed for better insight on what is desired from the product. 
+
+**Competitors - Online Planners (Google Calendar)**
+
+Online planners are not an uncommon thing, especially to college students as our audience. We will present our product as something different than our competitors, such as Google Calendar, as we offer more incentive to finish the user’s tasks.
+
+**Application Developers - Project Team**
+
+As the developers, we are constantly changing and improving our product and are able to test it and run through what specifications are missing or lacking in the project. 
+
+**Community - NAU**
+
+Having an effective planner will aid in having school work turned in on time, or even earlier, which helps professors, in our case NAU faculty, in keeping students on track and ready for class. This could also apply to jobs outside of regular school work, for example NAU offers work for the school, such as tutoring or grading for a class, which would be more effective with employees getting grades in a timely manner or being prepared for tutoring sessions.
 
 ## 3. Functional Requirements (Features)
 - Users will be able to see their progress on tasks.
