@@ -51,6 +51,10 @@ Having an effective planner will aid in having school work turned in on time, or
 ## 5. MVP
 
 ## 6. Use Cases
+### 6.1 Use Case Diagram
+![Use Case Diagram](D2.6.1.jpg)
+
+### 6.2 Use Case Descriptions and Interface Sketch
 
 ## 7. User Stories
 
