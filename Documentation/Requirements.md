@@ -76,6 +76,22 @@ a. The student does not know the password associated with their account.
 
 ![Log In Interface Sketch](LogInSketch.JPG)
 
+**Use Case:** check off finished to-do list items\
+**Actor:** Student\
+**Description:** The student checks items off of their to-do list that they have completed\
+**Preconditions:** The student has items on their to-do list
+
+**Main Flow:**
+1. The student clicks on the task
+2. The student marks the task as complete
+
+**Alternate Flow:**\
+a. The student wants to delete the task instead
+1. The student clicks on the task
+2. The student removes the task from the list without marking it as complete
+
+![Marking Tasks Sketch](marking-tasks.jpg)
+
 ## 7. User Stories
 
 ## 8. Issue Tracker
