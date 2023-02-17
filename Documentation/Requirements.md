@@ -55,6 +55,21 @@ Having an effective planner will aid in having school work turned in on time, or
 ![Use Case Diagram](D2.6.1.jpg)
 
 ### 6.2 Use Case Descriptions and Interface Sketch
+**Use Case:** Sign Into Account
+**Actor:** Student
+**Description:** The student signs into their SideQuests account.
+**Preconditions:** The student has the SideQuests login page open. 
+**Main Flow:**
+1. The student enters the email associated with their account.
+2. The student enters the password associated with their account.
+3. The student confirms the entries and is signed in.
+**Alternate Flow:**
+a. The student does not know the password associated with their account.
+1. The student selects the forgotten password alternative.
+2. The student enters the email associated with their account.
+3. The student exits the interface and resets their passoword.
+4. The student logs in as normal with their new password. 
+![Log In Interface Sketch](LogInSketch.JPG)
 
 ## 7. User Stories
 
