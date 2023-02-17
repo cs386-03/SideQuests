@@ -32,7 +32,13 @@ Having an effective planner will aid in having school work turned in on time, or
 - Users will be able to add events to the calendar.
 
 ## 4. Non-Functional Requirements
-
+1. Usability - Users will be able to navigate with clear labels and no help from developers.
+2. Speed - The website will be fast enough to keep up with daily task completion and trophy/award gains.
+3. Reliabilty - The website utilizes a trusted server so users can access the site at anytime.
+4. Compatibility - The website works and displays properly across mobile phone, tablet, laptop, and desktop computers.
+5. Readability - Users will be satisfied with how the website looks and how easy it is to take in information.
+6. Resource Constrained - Webpages for the site will be less than 6mb.
+7. Accessibility - Colorblind friendly and having alt text for all images 
 ## 5. MVP
 
 ## 6. Use Cases
