@@ -49,10 +49,10 @@ Having an effective planner will aid in having school work turned in on time, or
 7. Accessibility - Colorblind friendly and having alt text for all images. 
 8. User Interface Aestehetics - Have every aspect of the webpage design look pleasing and work together to form an enjoyable experience on the website.
 ## 5. MVP
-- A Minimal Viable Product for this project would include a calendar on an accessable webpage with a few assignable tasks.  This will be tested by having a few people access the webpage and try adding a few tasks for themselves. 
-- Features to validate: pop reminders, assignable tasks, calendar is right, awards can be received for marking a task as complete, anything else?
+- A Minimal Viable Product for this project would include a calendar on an accessable webpage with a few tasks that users are able to assign for themselves for a specific day. These will be tasks that they can either choose from a bank, or give their own description for. Completing these tasks will earn them awards that they are able to see and collect. This will be tested by having a few people access the webpage and try adding a few tasks for themselves, as well as completing these tasks and seeing the awards appear. 
+- Features to validate??: pop reminders, assignable tasks, calendar is right, awards can be received for marking a task as complete, anything else?
 - (simple, attainable, measurable)
-
+- we don't have to do everything in the features tab do we? because this is just the minimum, and the other stuff is the full product?
 - how easy are reminders to do on a webpage?
 
 ## 6. Use Cases
