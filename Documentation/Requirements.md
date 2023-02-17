@@ -1,6 +1,14 @@
 # Deliverable 2 - Project Requirements
 
 ## 1. Positioning
+# 1.1: Problem Statement
+The problem of disorganization and cluttered schedules affects college students and professors alike; the impact of which is a stressful existence and forgetting to complete important tasks throughout any given day.
+
+# 1.2: Product Position Statement
+For people working or studying at a college who have busy schedules, SideQuests is a calender/planner website that turns organization and productivity into a rewarding activity; unlike Google Calender our product offers a rewards system to encourage the user to complete their tasks every day.
+
+# 1.3: Value proposition
+SideQuests is an easy to use website that assists in navigating the chaos of life with reminders and rewards, praising you for staying on track.
 
 ## 2. Stakeholders
 **Users/Testers - NAU students**
