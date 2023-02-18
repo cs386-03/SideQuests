@@ -92,6 +92,34 @@ a. The student wants to delete the task instead
 
 ![Marking Tasks Sketch](marking-tasks.jpg)
 
+**Use Case:** Add or remove calendar events\
+**Actor:** Student\
+**Description:** A user will be able to add or remove personal calendar events\
+**Preconditions:** The user is already logged into their account and is on the website\
+**Postconditions:** The calendar is now up to date with what the student needs to know.
+
+**Mainflow:**
+1. The system asks for what action wants to be taken\
+1a. Add an event\
+      &emsp;&ensp;i. The student inputs the name of the event.\
+      &emsp;&ensp;ii. The student inputs the color coding for the event.\
+      &emsp;&ensp;iii. The student inputs the date of the event.\
+      &emsp;&ensp;iv. The system places the event on the set date.\
+1b. Remove an event\
+      &emsp;&ensp;i. The student inputs the date of the event to be removed.\
+      &emsp;&ensp;ii. The student inputs the name of the event to be removed.\
+      &emsp;&ensp;iii.  The system searches for the date of the event to be removed\
+      &emsp;&ensp;iv. The system searches for the name of the event to be removed.\
+      &emsp;&ensp;v. The system deletes the event.
+      
+**Alternative Flow:**\
+a. The student changes their mind and wants to not add an event or wants to keep the event
+1. The system asks for confirmation
+2. The student confirms the cancellation
+3. The system cancels the operation for adding the event 
+
+![6 2 2](https://user-images.githubusercontent.com/102330088/219818060-9b081d2d-346d-4732-9739-10c003bc0324.jpg)
+
 ## 7. User Stories
 
 ## 8. Issue Tracker
