@@ -120,6 +120,33 @@ a. The student changes their mind and wants to not add an event or wants to keep
 
 ![6 2 2](https://user-images.githubusercontent.com/102330088/219818060-9b081d2d-346d-4732-9739-10c003bc0324.jpg)
 
+**Use Case:** Add or remove to-do list items\
+**Actor:** Student\
+**Description:** A user will b e able to add new to-do list items or remove unnecesary ones\
+**Preconditions:** The user is logged into their SideQuests account\
+**Postconditions:** The to-do list will be up to date for the user.
+
+**Mainflow:**
+1a. Add a to-do item\
+      &emsp;&ensp;i. The student selects a type of task to add\
+      &emsp;&ensp;ii. The student assigns the task a priority\
+      &emsp;&ensp;iii. The student selects if they want the item to be reacurring or for a specific date\
+      &emsp;&ensp;iv. The student assigns a date to have the task done by\  
+      &emsp;&ensp;v. The task is added to the to-do list\
+1b. Remove a to-do item\
+      &emsp;&ensp;i. The student clicks the x to remove the to-do item\
+      &emsp;&ensp;ii. The task is removed from the to-do list
+
+      
+**Alternative Flow:**\
+a. The student wishes to change the date the task must be done by
+1. The student clicks on the to-do list item
+2. The student selects the due date
+3. The student selects a new due date
+4. The system updates the to-do list with the new data
+
+![To-Do](To_Do_List.jpg)
+
 ## 7. User Stories
 
 ## 8. Issue Tracker
