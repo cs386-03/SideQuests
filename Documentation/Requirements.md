@@ -165,6 +165,12 @@ a. The student wishes to change the date the task must be done by
       6a. Student chooses friend who is already using the website. \
       6b. Student sends a code to a new friend to sign up for the site.
 
+**Alternative flow**
+1. The student decides to cancel sharing with friend\
+a. The student selects the task they want to cancel\
+b. The student chooses to cancel sharing\
+c. The system updates the friends to-do list, deleting the task on their page
+
 ![Share Task with friend](Share_task.jpg)
 
 ## 7. User Stories
