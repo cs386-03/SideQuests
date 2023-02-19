@@ -146,7 +146,7 @@ a. The student wishes to change the date the task must be done by
 3. The student selects a new due date
 4. The system updates the to-do list with the new data
 
-![To-Do](To_Do_List.jpg)
+![To-Do](Final_To_Do.jpg)
 
 ## 7. User Stories
 
