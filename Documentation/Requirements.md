@@ -126,7 +126,7 @@ a. The student changes their mind and wants to not add an event or wants to keep
 **Preconditions:** The user is logged into their SideQuests account\
 **Postconditions:** The to-do list will be up to date for the user.
 
-**Mainflow:**\
+**Mainflow:**
 
 1a. Add a to-do item\
       &emsp;&ensp;i. The student selects a type of task to add\
