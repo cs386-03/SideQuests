@@ -148,6 +148,31 @@ a. The student wishes to change the date the task must be done by
 
 ![To-Do](Final_To_Do.jpg)
 
+**Use Case:** Create a shared task with a friend\
+**Actor:** Student\
+**Description:** A user will be able to create a new task on their to-do list and share it with a friend.\
+**Preconditions:** The user is logged into their SideQuests account.\
+**Postconditions:** The user and a friends will have a shared task to do on both to-do lists.
+
+**Mainflow:**
+
+1. The student selects a type of task to add.
+2. The student assigns the task a priority amount.
+3. The student selects if the task is reacurring.
+4. The student selects when the task is due.
+5. The student selects the option to share.
+6. The student chooses who they want to share with.\
+      6a. Student chooses friend who is already using the website. \
+      6b. Student sends a code to a new friend to sign up for the site.
+
+**Alternative flow**
+1. The student decides to cancel sharing with friend\
+a. The student selects the task they want to cancel\
+b. The student chooses to cancel sharing\
+c. The system updates the friends to-do list, deleting the task on their page
+
+![Share Task with friend](Share_task.jpg)
+
 ## 7. User Stories
 
 ## 8. Issue Tracker
