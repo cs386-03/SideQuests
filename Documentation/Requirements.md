@@ -173,6 +173,26 @@ c. The system updates the friends to-do list, deleting the task on their page
 
 ![Share Task with friend](Share_task.jpg)
 
+**Use Case:** View a friend’s profile and progress\
+**Actor:** Student\
+**Description:** A user will be able to view friends profiles and progress with tasks and other activities.\
+**Preconditions:** The user is logged into their SideQuests account and add their friends.\
+**Postconditions:** The user and a friend will be able to view each other's profile and achievements.
+
+**Mainflow:**
+1. The student goes to their friends list tab.
+2. The student types in their friends name/id.
+3. The student can view pending friend requests and accept requests.
+4. The student can click on users they are friends with and view profile.
+5. The student can also view their progress on their friends profile.
+
+**Alternative flow**
+1. The student can decide to remove a friend or hide profile\
+a. The student can select to put profile on private\
+b. The student can choose to show profile to only certain friends.
+
+![View a friend’s profile and progress](FriendsList.png)
+
 ## 7. User Stories
 
 ## 8. Issue Tracker
