@@ -195,4 +195,32 @@ b. The student can choose to show profile to only certain friends.
 
 ## 7. User Stories
 
+1. “As a student, I want to see an organized to-do list by date so that I know what tasks need to be focused on first.” Priority 1. Estimated time: 5 hours
+
+2. “As a website user, I want to have the ability to earn points for completing tasks so that I can look forward to completing the next item on my list.” Priority 2. Estimated time: 5 hours
+
+3. “As a busy student, I want to be able to see everything I have to do on one page so I can save time.”  Priority 6. Estimated time: 2 hours
+
+4. “As a student with limited technology access, I want to be able to track my tasks on any device without downloading an app, so I can save storage on my devices.” Priority 5. Estimated time: 5 hours
+
+5. “As a student, I want to be able to create my own tasks to add to my list, so that I can personalize the tasks to my own needs.” Priority 3. Estimated time: 4 hours
+
+6. “As a teacher, I want to be able to color-code my tasks by which class they correspond to, so that I can keep track of different classes at the same time.” Priority 8. Estimated time: 6 hours
+
+7. “As a student, I want to be able to receive notifications from the program, so that I can be reminded to complete my tasks.” Priority 4. Estimated time: 5 hours
+
+8. “As a student, I want to be able to show my friends my rewards so that I can show them my progress and we can encourage each other to succeed.” Priority 7. Estimated time: 10 hours
+
+9. “As a busy student, I want to have the ability to assign different tasks as higher or lower priorities to sort tasks with similar due dates.” Priority 9. Estimated time: 4 hours
+
+10. “As a website user, I want to be able to share a copy of my tasks to my friends to show them what I want to accomplish.” Priority 11. Estimated time: 7 hours
+
+11. “As a competitive user, I want to be able to see my friends progress and be able to see if I am doing better than them or not.” Priority 10. Estimated time: 6 hours 
+
+12. “As a website user, I want to be able to see my friends achievements to see how they are doing on their tasks and goals.” Priority 12. Estimated time: 5 hours 
+
 ## 8. Issue Tracker
+
+[https://github.com/cs386-03/SideQuests/issues]
+
+![D2_Issues](https://user-images.githubusercontent.com/102330088/219987692-986e3ee6-e175-4cd7-b2e3-63930ff7552e.jpg)
