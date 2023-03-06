@@ -38,7 +38,6 @@ div.bookshelfOne {
   text-align: center;
   padding: 0 10px;
   width: 820px;
-
 }
 
 div.bookshelfTwo {
@@ -46,6 +45,7 @@ div.bookshelfTwo {
   grid-area: bookshelfTwo;
   text-align: center;
   width: 840px;
+  transform: translate(0, -5.5em);
 }
 
 div.bookshelfOne h2 {
@@ -86,6 +86,20 @@ h3 {
   text-align: left;
 }
 
+.avatar {
+  vertical-align: middle;
+  width: 125px;
+  height: 125px;
+  border-radius: 50%;
+  border: 3px outset #8DBFC9;
+  margin-bottom: 15px;
+}
+
+#inset {
+  border: 3px inset #263f4e;
+  background-color: #263f4e;
+  padding: 0 10px;
+}
 /*
 General styles
 */
