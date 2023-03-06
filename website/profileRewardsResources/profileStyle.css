@@ -6,12 +6,13 @@ div.container {
    width: 100%;
    height: 100%;
    color: black;
-   grid-template-columns: 1fr 1fr;
-   grid-auto-rows: 1fr;
+   grid-template: 1fr repeat(4, 25%) / repeat(2, 50%);
    grid-template-areas: 
      "head head"
-     "panleft panright"
-     "panleft panright";
+     "panleft bookshelfOne"
+     "panleft bookshelfOne"
+     ". bookshelfTwo"
+     ". bookshelfTwo";
 }
 
 div.header {
@@ -19,32 +20,45 @@ div.header {
    color: #8DBFC9;
    text-align: center;                         
    grid-area: head;  
-   border: 2px solid #8DBFC9;              
+   border: 2px solid #8DBFC9;      
+   padding: 0 10px;;        
  }
 
 div.panel.left {    
   margin: 30px; 
   grid-area: panleft;
   text-align: center;
-  border: 2px solid #8DBFC9;
+  border: 5px outset #8DBFC9;
   padding: 0 10px;
 }
 
-div.panel.right {
-  margin: 30px; 
-  grid-area: panright;
+div.bookshelfOne {
+  margin: 0 30px; 
+  grid-row: bookshelfOne;
   text-align: center;
   padding: 0 10px;
-  background-image: url(bookshelf.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: auto;
+  width: 820px;
+
 }
 
-div.panel.right h2 {
-  border: 2px solid black;
-  margin: 5px auto;
-  padding: 5px 20px;
+div.bookshelfTwo {
+  margin: 0 30px;
+  grid-area: bookshelfTwo;
+  text-align: center;
+  width: 840px;
+}
+
+div.bookshelfOne h2 {
+  border: 2px solid #8DBFC9;
+  background: rgba(22, 38, 47, 0.4);
+  margin: 5px 250px; /*Get help with auto*/
+  text-align: center;
+}
+
+div.bookshelfOne, div.bookshelfTwo {
+  border-bottom: 2px solid #8DBFC9;
+  height: 395px;
+  background-image: url(bookshelfTwo.jpg);
 }
 
 body {
