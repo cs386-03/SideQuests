@@ -6,11 +6,11 @@ div.container {
    width: 100%;
    height: 100%;
    color: black;
-   grid-template: 1fr 2fr 2fr / 60% 40%;
+   grid-template: 1fr 2fr 2fr / 50% 50%;
    grid-template-areas: 
      "head head"
-     "panleft torphies"
-     "panleft trophies";
+     "panleft bookshelf"
+     "panleft bookshelf";
 }
 
 div.header {
@@ -31,20 +31,26 @@ div.panel.left {
   padding-bottom: 10px;
   padding-right: 20px;
   padding-left: 20px;
-  display: grid;;
+  display: grid;
+  min-width: fit-content;
 }
 
-div.trophycase {
+div.bookshelfOne {
   margin: 30px;
-  grid-area: trophies;
-  grid-row: 2 / 3;
-
+  grid-area: bookshelf;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url(bookshelf.png);
+  background-repeat: repeat-y;
+  background-size: cover;
+  min-width: 437px;
 }
 
-div.trophycase h2 {
+div.bookshelfOne h2 {
   border: 2px solid #8DBFC9;
   text-align: center;
-
+  margin: 2% auto;
+  background-color: rgba(22, 38, 47, 0.4)
 }
 
 body {
@@ -100,24 +106,7 @@ General styles
 .p1{
   font-size: 18px;
 }
-table {
-  width: 100%;
-  height: 100%;
-  border: 5px inset #8DBFC9;
-  background-color: #8DBFC9;
-}
-td {
-  border: 1px solid white;
-  border-radius: 10%;
-  background-color: white;
-  text-align: center;
-  border-spacing: 0;
-}
-.gray {
-  border: 1px solid lightgray;
-  border-radius: 5%;
-  background-color: lightgray;
-}
+
 
 /*
 This is the Top Nav Bar stuff
@@ -148,6 +137,8 @@ div.topnav a.active {
 .editButton {
   background-color: #8DBFC9;
   border-radius: 50%;
+  margin: 5px;
+  border: none;
   width: fit-content;
   justify-self: right;
 }
