@@ -2,28 +2,28 @@
 Container stlyes
 */
 div.container {
-   display: grid;
-   width: 100%;
-   height: 100%;
-   color: black;
-   grid-template: 1fr 2fr 2fr / 50% 50%;
-   grid-template-areas: 
-     "head head"
-     "panleft bookshelf"
-     "panleft bookshelf";
+  display: grid;
+  width: 100%;
+  height: 100%;
+  color: black;
+  grid-template: 1fr 2fr 2fr / 3fr 2fr;
+  grid-template-areas:
+    "head head"
+    "panleft grid"
+    "panleft grid";
 }
 
 div.header {
-   margin: 30px auto;
-   color: #8DBFC9;
-   text-align: center;                         
-   grid-area: head;  
-   border: 2px solid #8DBFC9;      
-   padding: 0 10px;;        
- }
+  margin: 30px auto;
+  color: #8DBFC9;
+  text-align: center;
+  grid-area: head;
+  border: 2px solid #8DBFC9;
+  padding: 0 10px;
+}
 
-div.panel.left {    
-  margin: 30px; 
+div.panel.left {
+  margin: 2em;
   grid-area: panleft;
   text-align: center;
   border: 5px outset #8DBFC9;
@@ -35,34 +35,32 @@ div.panel.left {
   min-width: fit-content;
 }
 
-div.bookshelfOne {
-  margin: 30px;
-  grid-area: bookshelf;
-  grid-row-start: 2;
-  grid-row-end: 4;
-  background-image: url(bookshelf.png);
-  background-repeat: repeat-y;
-  background-size: cover;
-  min-width: 437px;
+div.trophyGrid {
+  margin: 0 1em;
+  border: 5px outset #8DBFC9;
+  height: fit-content;
+  grid-area: grid;
+  grid-row: 2 / 4;
 }
 
-div.bookshelfOne h2 {
-  border: 2px solid #8DBFC9;
+div.trophyGrid h2 {
   text-align: center;
-  margin: 2% auto;
-  background-color: rgba(22, 38, 47, 0.4)
+  border-radius: 3em;
+
 }
+
 
 body {
-   background: #16262f;
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: 50%;
-   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
-   height: 100%;
+  background: #16262f;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  height: 100%;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: 'Roboto', sans-serif;
   font-weight: 100;
   font-size: 2.6em;
@@ -97,16 +95,42 @@ h3 {
 }
 
 .edit {
-  height: 2.5em;
-  width: 2.5em;
+  height: 2em;
+  width: 2em;
 }
+
 /*
 General styles
 */
-.p1{
+.p1 {
   font-size: 18px;
 }
 
+table {
+  width: 100%;
+  height: 100%;
+  border: 5px inset #263f4e;
+  padding: 1em;
+  background: linear-gradient(#263f4e, #16262f);
+}
+
+tr {
+  padding: 2em 0;
+}
+
+td {
+  padding: 1% 0;
+  background-color: lightgray;
+  width: 10%;
+  border-radius: 1em;
+}
+
+.trophy {
+  width: 5em;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
 
 /*
 This is the Top Nav Bar stuff
@@ -134,6 +158,7 @@ div.topnav a.active {
   background-color: #071A52;
   color: white;
 }
+
 .editButton {
   background-color: #8DBFC9;
   border-radius: 50%;
