@@ -134,6 +134,21 @@ td {
 td:hover {
   background-color: gray;
   filter: drop-shadow(2px 4px 6px black);
+  animation: floating 1s ease-in-out infinite
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+
+  50% {
+    transform: translate(0, -15px);
+  }
+
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 .trophy {
@@ -142,6 +157,8 @@ td:hover {
   display: block;
   margin: 0 auto;
 }
+
+
 
 /*
 This is the Top Nav Bar stuff
