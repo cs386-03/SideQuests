@@ -2,8 +2,9 @@
 <html lang="en">
     <head>
         <title>SideQuests/friendslist</title>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css"> 
     </head>
+
     <body>
         <div class="topnav">
             <a href="http://sidequests.pro">Home</a>
@@ -11,57 +12,61 @@
             <a class="active" href="http://sidequests.pro/friends">Friends</a>
         </div>
         <div class="container">
-            <div class="list">
-                <div class="find-friends-body">
-                    <div class="heading">Friends List</div>
-                    <div class="user-row">
-                        <div class="user-info">
-                            <img src="avatar.png" alt="user">
-                            <span>FirstName LastName</span>
-                        </div>
-                        <div class="user-info">
-                            <img src="avatar.png" alt="user">
-                            <span>FirstName LastName</span>
-                        </div>
-                        <div class="user-info">
-                            <img src="avatar.png" alt="user">
-                            <span>FirstName LastName</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="add">
-                <div class="find-friends-header">
-                    <div class="heading">Find Friends</div>
+                <div class="add-friend-body">
+                    <div class="heading">Add Friends</div>
                     <div class="search">
                         <img src="search.png" alt="search">
                         <input type="text" placeholder="Enter a friends name">
                     </div>
                 </div>
             </div>
-            <div class="pending">
-                <div class="pending-request">
-                    <div class="heading">Pending Requests</div>
-                    <div class="user-request">
+            <div class="msgs">
+                <div class="msg-body">
+                    <div class="heading">Messages</div>
+                    <div class="user-row">
                         <div class="user-info">
-                            <span>FirstName LastName</span>
+                            <img src="AL.jpg" alt="user">
+                            <span>Abraham Lincoln</span>
                         </div>
-                        <button class="action-accept">
-                            accept
-                        </button>
-                    </div>
-                    <div class="user-request">
                         <div class="user-info">
-                            <span>FirstName LastName</span>
+                            <img src="JB.jpg" alt="user">
+                            <span>Justin Bieber</span>
                         </div>
-                        <button class="action-accept">
-                            accept
-                        </button>
-                    </div>                        
                     </div>
                 </div>
             </div>
-            
+            <div class="list">
+                <div class="friends-list-body">
+                    <div class="heading">Your Friends</div>
+                    <div class="list-user-row">
+                        <div class="list-user-info">
+                            <img src="AL.jpg" alt="user">
+                            <span>Abraham Lincoln</span>
+                        </div>
+                        <div class="user-info">
+                            <img src="BO.jpg" alt="user">
+                            <span>Barack Obama</span>
+                        </div>
+                        <div class="user-info">
+                            <img src="JB.jpg" alt="user">
+                            <span>Justin Bieber</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="sidebar">
+                <div class="sidebar-buttons">
+                    <a class="active" href="http://sidequests.pro/friends">Friends</a>
+                    <a href="http://sidequests.pro/friends/pending">Pending</a>
+                    <a href="http://sidequests.pro/friends/blocked">Blocked</a>
+                </div>
+            </div>
+
+
+
         </div>
+    
     </body>
 </html>
