@@ -1,86 +1,223 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Profile & Rewards</title>
+    <link href="profileRewardsResources/profileStyle.css" rel="stylesheet" />
+  </head>
 
-<head>
-   <title>Profile & Rewards</title>
-   <link href="profileRewardsResources/profileStyle.css" rel="stylesheet">
-</head>
-
-<body>
-   <div class="topnav">
+  <body>
+    <div class="topnav">
       <a href="http://sidequests.pro">Home</a>
       <a class="active" href="profileRewards.html">Profile</a>
       <a href="http://sidequests.pro/friends">Friends</a>
-   </div>
-   <div class="container">
-
+    </div>
+    <div class="container">
       <div class="header">
-         <h1>Profile & Rewards</h1>
+        <h1>Profile & Rewards</h1>
       </div>
 
       <div class="panel left">
+        <h2>Profile Information</h2>
+        <img
+          src="profileRewardsResources/avatar.png"
+          alt="avatar"
+          class="avatar"
+        />
 
-         <h2>Profile Information</h2>
-         <img src="profileRewardsResources/avatar.png" alt="avatar" class="avatar">
-
-         <div id="inset">
-            <h3 class="name">Name: </h3>
-            <input class="nameValue" align='right' type="text">
-            <p class="nameInfo"></p>
-            <h3 class="occupation">Occupation: </h3>
-            <input class="occupationValue" align='right' type="text">
-            <p class="occupationInfo"></p>
-            <h3 class="birthDate">Date of Birth: </h3>
-            <input class="birthDateValue" align='right' type="text">
-            <p class="birthDateInfo"></p>
-         </div>
-         <button class="editButton" type="button" name='button'><img src="profileRewardsResources/edit.png" alt="pencil"
-               class="edit"></button>
+        <div id="inset">
+          <h3 class="name">Name:</h3>
+          <h3 class="job">Occupation:</h3>
+          <h3 class="DOB">Date of Birth:</h3>
+        </div>
+        <div class="updateInformation hidden">
+          <form class="information">
+            <input class="nameInput" type="text" value="Name: " /> <br />
+            <input class="jobInput" type="text" value="Occupation: " /><br />
+            <input class="dobInput" type="date" /><br />
+            <button class="submit" type="submit">SUBMIT</button>
+          </form>
+        </div>
+        <div class="overlay hidden"></div>
+        <button class="editButton" type="button" name="button">
+          <img
+            src="profileRewardsResources/edit.png"
+            alt="pencil"
+            class="edit"
+          />
+        </button>
       </div>
 
       <div class="trophyGrid">
-         <h2>Rewards 💎</h2>
-         <table>
-            <tr>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-            </tr>
-            <tr>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-            </tr>
-            <tr>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-            </tr>
-            <tr>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-            </tr>
-            <tr>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-               <td><img class="trophy" src="profileRewardsResources/trophy_placeholder.png"></td>
-            </tr>
-         </table>
+        <h2>Rewards 💎</h2>
+        <table>
+          <tr>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+              <div class="Description">
+                <h3>Trophy Name</h3>
+                <h3>Trophy Description</h3>
+                <h4>Acquisition Events</h4>
+              </div>
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+            <td>
+              <img
+                class="trophy"
+                src="profileRewardsResources/trophy_placeholder.png"
+              />
+            </td>
+          </tr>
+        </table>
       </div>
-
-      <script src="profileRewardsResources/script.js"></script>
-   </div>
-</body>
-
+    </div>
+    <script src="profileRewardsResources/script.js"></script>
+  </body>
 </html>
