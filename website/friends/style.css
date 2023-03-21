@@ -14,6 +14,7 @@ body {
     background-size: cover;
     background-position: 50%;
     height:100%;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 html {
@@ -246,12 +247,4 @@ div.topnav {
     background-color: #071A52;
     color: white;
   }
-  button{
-    background-color:#071A52;
-    color: white;
-    height: 50px;
-    width: 200px;
-    font-size: 17px;
-    margin-bottom:10px;
-    display: block;
-  }
+  
