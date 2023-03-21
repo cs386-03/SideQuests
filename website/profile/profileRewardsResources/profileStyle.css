@@ -148,10 +148,10 @@ td {
 td:hover {
   background-color: gray;
   filter: drop-shadow(2px 4px 6px black);
-  animation: floating 1s ease-in-out infinite;
+  /* animation: floating 1s ease-in-out infinite; */
 }
 
-@keyframes floating {
+/* @keyframes floating {
   0% {
     transform: translate(0, 0px);
   }
@@ -163,7 +163,7 @@ td:hover {
   100% {
     transform: translate(0, -0px);
   }
-}
+} */
 
 .trophy {
   width: 5em;
@@ -181,7 +181,7 @@ td:hover {
 
 .updateInformation {
   position: absolute;
-  background-color: #fff;
+  background-color: #16262f;
   border-radius: 1em;
   top: 40%;
   left: 30%;
@@ -206,6 +206,28 @@ td:hover {
 input {
   margin: 2em 0;
   padding: 0.5em;
+  border-radius: 1em;
+  background-color: #263f4e;
+  border: 1px solid gray;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.submit {
+  border-radius: 1em;
+}
+
+/* Trophy Description */
+.description {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 1em;
+  top: 40%;
+  left: 30%;
+  height: auto;
+  padding: 3em;
+  width: 30%;
+  box-shadow: 0 3em 5em rgba(0, 0, 0, 0.3);
+  z-index: 10;
 }
 
 /* Tooltip  stuff */
