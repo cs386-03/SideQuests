@@ -13,7 +13,7 @@ const nameVal = document.querySelector(".name");
 const jobVal = document.querySelector(".job");
 const dobVal = document.querySelector(".DOB");
 
-const tableData = document.querySelector("td");
+const tableData = document.getElementsByTagName("td");
 
 // Shows box for profile information
 editBtn.addEventListener("click", (event) => {
@@ -52,10 +52,20 @@ submitBtn.addEventListener("click", (event) => {
 });
 
 // pulls up description of trophy
-tableData.addEventListener("click", (event) => {
-  description.classList.remove("hidden");
-  overlay.classList.remove("hidden");
-});
+
+for (let index = 0; index < tableData.length; index++) {
+  let indexClass = document.querySelector(`.description--${index}`);
+  tableData[index].addEventListener("click", (event) => {
+    // description.classList.remove("hidden");
+    overlay.classList.remove("hidden");
+    console.log(index);
+    indexClass.classList.remove("hidden");
+  });
+  overlay.addEventListener("click", (event) => {
+    overlay.classList.add("hidden");
+    indexClass.classList.add("hidden");
+  });
+}
 
 overlay.addEventListener("click", (event) => {
   event.preventDefault();
