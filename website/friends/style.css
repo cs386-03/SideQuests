@@ -21,6 +21,10 @@ html {
     height: 100%;
 }
 
+a {
+    text-decoration: none;
+}
+
 /*
 CONTAINER AND GRID LAYOUT
 */
@@ -140,6 +144,11 @@ STYLE FOR THE DMS/MSGS
     width: 70px;
     border-radius: 50%;
     margin-right: 15px;
+}
+
+.user-info a:hover {
+    background-color: #ddd;
+    color: black;
 }
 
 /*
