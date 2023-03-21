@@ -38,14 +38,12 @@ div.add {
     color: #8DBFC9;
     text-align: center;
     grid-area: add;
-    border: 2px solid #8DBFC9;
 }
 
 div.msgs {
     color: #8DBFC9;
     text-align: center;
     grid-area: msgs;
-    border: 2px solid #8DBFC9;
     background-color: #121e26;
 
 }
@@ -54,14 +52,12 @@ div.list {
     color: #8DBFC9;
     text-align: center;
     grid-area: list;
-    border: 2px solid #8DBFC9;
 }
 
 div.sidebar {
     color: #8DBFC9;
     text-align: center;
     grid-area: sidebar;
-    border: 2px solid #8DBFC9;
     background-color: #121e26;
 }
 /*
