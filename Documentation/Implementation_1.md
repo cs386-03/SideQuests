@@ -9,7 +9,8 @@
 **Pull Request:** [Pull #86](https://github.com/cs386-03/SideQuests/pull/86)\
 **Implemented by:** Lauren Farr\
 **Approved By:** Joshua VanderMeer\
-**Print screen:** ![Login Form](LoginForm.JPG)
+**Print screen:** \
+![Login Form](LoginForm.JPG)
 
 ## 3. Tests
 
