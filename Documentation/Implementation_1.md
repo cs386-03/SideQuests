@@ -4,7 +4,7 @@
 
 ## 2. Implemented Requirments
 
-**Requirement:** *As a student, I want to be able to log in on multiple devices so I can see my to-do list and calendar from anywhere.\
+**Requirement:** *As a student, I want to be able to log in on multiple devices so I can see my to-do list and calendar from anywhere.* \
 **Issue:** [Issue #91](https://github.com/cs386-03/SideQuests/issues/91)\
 **Pull Request:** [Pull #86](https://github.com/cs386-03/SideQuests/pull/86)\
 **Implemented by:** Lauren Farr\
