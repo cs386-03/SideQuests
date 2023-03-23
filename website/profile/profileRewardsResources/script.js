@@ -3,11 +3,13 @@
 // On screen Buttons
 const editBtn = document.querySelector(".editButton");
 const submitBtn = document.querySelector(".submit");
+const closeBtn = document.querySelectorAll(".close");
 
 // Pop-up stuff
 const formBox = document.querySelector(".updateInformation");
 const overlay = document.querySelector(".overlay");
 const description = document.querySelector(".description");
+const birthdayMes = document.querySelector(".birthdayMessage");
 
 // Input and label values
 const nameInput = document.querySelector(".nameInput");
@@ -16,12 +18,23 @@ const dobInput = document.querySelector(".dobInput");
 const nameVal = document.querySelector(".name");
 const jobVal = document.querySelector(".job");
 const dobVal = document.querySelector(".DOB");
+const ageLabel = document.querySelector(".ageHere");
+const avatar = document.querySelector(".avatar");
+let inputFile;
 
 // Trophy table data
 const tableData = document.getElementsByTagName("td");
 
 // getting current time when date is called
 const date = new Date();
+
+// Closes any popup open
+const closePopup = () => {
+  overlay.classList.add("hidden");
+  description.classList.add("hidden");
+  formBox.classList.add("hidden");
+  birthdayMes.classList.add("hidden");
+};
 
 const isBirthday = (dateOfBirth, date) => {
   let currentDay, currentMonth, currentYear;
@@ -50,7 +63,9 @@ const isBirthday = (dateOfBirth, date) => {
 
   // check if today is user birthday
   if (currentDay === birthDate && currentMonth === birthMonth) {
-    alert(`HAPPY BIRTHDAY YOU'RE ${age} YEARS OLD`);
+    ageLabel.textContent = `You're ${age} years old!`;
+    overlay.classList.remove("hidden");
+    birthdayMes.classList.remove("hidden");
     return true;
   } else {
     return false;
@@ -130,16 +145,17 @@ for (let index = 0; index < tableData.length; index++) {
 overlay.addEventListener("click", (event) => {
   // Stops page from refreshing on click
   event.preventDefault();
-  overlay.classList.add("hidden");
-  description.classList.add("hidden");
-  formBox.classList.add("hidden");
+  closePopup();
 });
 
 // close description/form box and blur when escape key is pressed
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
-    overlay.classList.add("hidden");
-    description.classList.add("hidden");
-    formBox.classList.add("hidden");
+    closePopup();
   }
 });
+
+// Close Pop up using X button
+for (let index = 0; index < closeBtn.length; index++) {
+  closeBtn[index].addEventListener("click", closePopup);
+}
