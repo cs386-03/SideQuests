@@ -69,11 +69,16 @@ ul {
 input {
   width: 250px;
   height: 25px;
-  margin: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
-#submit {
+#signIn {
+  color: white;
   background-color: #8DBFC9;
+  text-decoration: none;
+  padding: 10px 16px;
+  margin: 10px;
 }
 
 /*

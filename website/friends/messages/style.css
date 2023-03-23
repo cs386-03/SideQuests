@@ -36,10 +36,10 @@ div.container {
     grid-template-rows: 1fr 5fr;
     grid-template-areas: 
     "msgs add sidebar"
-    "msgs list sidebar";
+    "msgs board sidebar";
 }
 
-div.add {
+div.message {
     color: #8DBFC9;
     text-align: center;
     grid-area: add;
@@ -53,10 +53,11 @@ div.msgs {
 
 }
 
-div.list {
+div.board {
     color: #8DBFC9;
     text-align: center;
-    grid-area: list;
+    grid-area: board;
+    background-color: #1b2e3a;
 }
 
 div.sidebar {
@@ -66,43 +67,16 @@ div.sidebar {
     background-color: #121e26;
 }
 /*
-STYLE FOR THE ADD FRIENDS SECTION
+STYLE FOR THE MESSAGING SECTION
 */
 
-.add-friend-body .heading{
+.message-body .heading{
     color: #8DBFC9;
     font-size: 22px;
     width: 100%;
     text-align: center;
-    padding: 25px 0;
+    padding: 60px 0;
     font-weight: bold;
-}
-
-.add-friend-body .search {
-    position: relative;
-}
-
-.add-friend-body .search img{
-    position: absolute;
-    width: 20px;
-    top: 15px;
-    left: 40px;
-}
-
-.add-friend-body .search input {
-    border: none;
-    outline: none;
-    margin: 0 25px 25px 25px;
-    width: calc(100% - 150px);
-    font-size: 16px;
-    color: #8DBFC9;
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 15px 50px;
-    border-radius: 40px;
-}
-
-.add-friend-body .search input::placeholder{
-    color: background-color: rgba(255, 255, 255, 0.5);
 }
 
 /*
@@ -151,10 +125,15 @@ STYLE FOR THE DMS/MSGS
     color: black;
 }
 
+.user-info a:active{
+    background-color: #071A2;
+}
+
+
 /*
-STYLE FOR THE MAIN FRIENDS LIST
+STYLE FOR THE MAIN FRIENDS TEXTS
 */
-.friends-list-body .heading{
+.friends-board-body .heading{
     color: #8DBFC9;
     font-size: 22px;
     width: 100%;
@@ -163,7 +142,7 @@ STYLE FOR THE MAIN FRIENDS LIST
     font-weight: bold;
 }
 
-.list-user-row {
+.board-user-row {
     margin: 20px 0;
     padding: 15px 25px;
     display: flex;
@@ -172,23 +151,24 @@ STYLE FOR THE MAIN FRIENDS LIST
     flex-direction: column;
 }
 
-.list-user-info {
-    margin: 20px 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.friends-board-body .send {
+    position: relative;
 }
 
-.list-user-info span {
-    margin: 20px 0;
+.friends-board-body .send input {
+    border: none;
+    outline: none;
+    margin: 400px 25px 0px 25px;
+    width: calc(100% - 150px);
+    font-size: 16px;
     color: #8DBFC9;
-    font-weight: bold;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px 5px;
+    border-radius: 40px;
 }
 
-.list-user-info img {
-    width: 70px;
-    border-radius: 50%;
-    margin-right: 15px;
+.friends-board-body .send input::placeholder{
+    color: background-color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -256,4 +236,12 @@ div.topnav {
     background-color: #071A52;
     color: white;
   }
-  
+  button{
+    background-color:#071A52;
+    color: white;
+    height: 50px;
+    width: 200px;
+    font-size: 17px;
+    margin-bottom:10px;
+    display: block;
+  }
