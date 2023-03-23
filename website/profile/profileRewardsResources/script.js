@@ -30,7 +30,7 @@ const isBirthday = (dateOfBirth, date) => {
   // Get current day
   currentDay = date.getDate();
 
-  // Get curreny month - Addition because of method is zero based
+  // Get curreny month - Addition because method is zero based
   currentMonth = date.getMonth() + 1;
 
   // Get current year
