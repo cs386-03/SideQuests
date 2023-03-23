@@ -80,7 +80,7 @@ h3 {
   text-align: left;
 }
 
-td h3 {
+.description h3 {
   text-align: center;
 }
 
@@ -151,10 +151,10 @@ td {
 td:hover {
   background-color: gray;
   filter: drop-shadow(2px 4px 6px black);
-  animation: floating 1s ease-in-out 3;
+  animation: floating 1s ease-in-out infinite;
 }
 
-/* @keyframes floating {
+@keyframes floating {
   0% {
     transform: translate(0, 0px);
   }
@@ -166,7 +166,7 @@ td:hover {
   100% {
     transform: translate(0, -0px);
   }
-} */
+}
 
 .trophy {
   width: 5em;

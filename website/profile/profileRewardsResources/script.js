@@ -24,13 +24,8 @@ const tableData = document.getElementsByTagName("td");
 const date = new Date();
 
 const isBirthday = (dateOfBirth, date) => {
-  let currentDay,
-    currentMonth,
-    currentYear,
-    birthDate,
-    birthMonth,
-    birthYear,
-    age;
+  let currentDay, currentMonth, currentYear;
+  let birthDate, birthMonth, birthYear, age;
 
   // Get current day
   currentDay = date.getDate();
@@ -133,6 +128,7 @@ for (let index = 0; index < tableData.length; index++) {
 
 // close description box/form box and blur when blur is click
 overlay.addEventListener("click", (event) => {
+  // Stops page from refreshing on click
   event.preventDefault();
   overlay.classList.add("hidden");
   description.classList.add("hidden");
