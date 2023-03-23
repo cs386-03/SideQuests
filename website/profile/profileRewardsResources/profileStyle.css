@@ -196,6 +196,7 @@ td:hover {
   width: 30%;
   box-shadow: 0 3em 5em rgba(0, 0, 0, 0.3);
   z-index: 10;
+  border: 2px dotted slategray;
 }
 
 .overlay {
@@ -218,6 +219,11 @@ input {
   color: rgba(255, 255, 255, 0.3);
 }
 
+.inputFile {
+  color: #fff;
+  border: none;
+}
+
 .submit {
   border-radius: 1em;
 }
@@ -227,7 +233,7 @@ input {
   position: absolute;
   background-color: #fff;
   border-radius: 1em;
-  top: 40%;
+  top: 30%;
   left: 30%;
   height: auto;
   padding: 3em;
