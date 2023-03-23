@@ -10,7 +10,7 @@ html {
 div.container {
   display: grid;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
   color: black;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 2fr 1fr;
@@ -22,28 +22,30 @@ div.container {
 div.header {
   margin: 30px auto;
   color: #8DBFC9;
-  text-align: center;                         
-  grid-area: head;  
-  border: 2px solid #8DBFC9;              
+  text-align: center;
+  grid-area: head;
+  border: 2px solid #8DBFC9;
 }
 
 div.main.body {
   margin: 30px auto;
   color: #8DBFC9;
-  text-align: center;                         
-  grid-area: mainbody;  
-  border: 2px solid #8DBFC9;              
+  text-align: center;
+  grid-area: mainbody;
+  border: 2px solid #8DBFC9;
 }
 
-div.panel.left {    
-  margin: 30px; 
+div.panel.left {
+  margin: 30px;
   grid-area: panleft;
+  min-height: 300px;
   text-align: center;
   border: 2px solid #8DBFC9;
-  
+  overflow-y: auto;
+
 }
 div.panel.right {
-  margin: 30px; 
+  margin: 30px;
   grid-area: panright;
   text-align: center;
   border: 2px solid #8DBFC9;
@@ -52,14 +54,41 @@ div.panel.right {
 
 /* This is the TO-DO list css */
 
-div.task.buttons {
-  display:flex;
+#dropDown {
+  width: 100%;
+  margin: 10px;
+  border: #8DBFC9;
+  background-color: #16262F;
+  color: #8DBFC9;
+  font-family: "Cabin Sketch";
+  font-size: 90%;
+}
+
+#dateSelect {
+  text-align: left;
+  margin-left: 5%;
+}
+
+#datePick {
+  width: 75%;
+  text-align: center;
+  margin-left: 12.5%;
+}
+
+#datePick p {
+  color: #8DBFC9;
+}
+
+div.tasks {
+  /*display: flex;
   flex-direction: row;
+  */
   border-bottom: 2px solid #8DBFC9;
 }
 
 .add {
-  width: 100%;
+  display:inline;
+  width: 30%;
   margin: 10px;
   border: #8DBFC9;
   background-color: #16262F;
@@ -74,18 +103,23 @@ div.task.buttons {
   margin: 0 0 10px 10px;
   width: 75%;
   padding: 10px;
-  float: left;
   font-family: "Cabin Sketch";
   font-size: 70%;
+  border: solid 1px #8DBFC9;
+  border-color: #8DBFC9;
 }
 
 .list_wrap {
-  position: absolute;
+  /*position: absolute;
   width: 15%;
+  */
+  overflow-y: auto;
+
 }
 
 .delete {
-  margin-left: 100px;
+  margin-left: 50px;
+  float: right;
 }
 
 .list {
@@ -96,7 +130,7 @@ div.task.buttons {
 }
 
 li {
-  width: 80%;
+  width: 90%;
   text-align: left;
 }
 
@@ -104,8 +138,12 @@ li {
   font-family: "Cabin Sketch";
   font-size: 200%;
   color: #8DBFC9;
+  border-bottom: solid #8DBFC9;
 }
 
+#todo_list {
+  width: 80%;
+}
 /* finished TO-DO list css */
 
 div.mainbody {
@@ -120,7 +158,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50%;
-  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
   height:100%;
 }
 h1, h2 {
@@ -129,11 +167,11 @@ h1, h2 {
   font-size: 2.6em;
   text-transform: uppercase;
   color: #8DBFC9;
-  
+
 }
 
 /*
-general stuff 
+general stuff
 */
 .p{
   font-size: 18px;
@@ -173,5 +211,6 @@ button{
   width: 200px;
   font-size: 17px;
   margin-bottom:10px;
-  display: block;
+  /*display: block;
+  */
 }
