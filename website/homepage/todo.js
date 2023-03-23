@@ -1,3 +1,15 @@
+// dropdown
+
+function showDropdown() {
+    document.getElementById("tasks").style.display = "block";
+}
+
+function closeDrop() {
+    document.getElementById("tasks").style.display = "none";
+}
+
+
+//adding an item
 var newList = document.getElementsByTagName("li");
 var index;
 for (index=0; index<newList.length; index++) {
@@ -21,11 +33,20 @@ for (index=0; index<close.length; index++) {
 }
 
 function newListItem() {
+    document.getElementById("tasks").style.display = "none";
     var li = document.createElement("li");
     var inputValue = document.getElementById("input").value;
     var inputText = document.createTextNode(inputValue);
 
+    var dateInput = document.getElementById("dateSelect").value;
+    var dateText = document.createTextNode(dateInput);
+    
+    var fillerText = document.createTextNode(" Due: ");
+
+
     li.appendChild(inputText);
+    li.appendChild(fillerText);
+    li.appendChild(dateText);
 
     if (inputValue === '') {
         alert("Write something before you add goober!");
