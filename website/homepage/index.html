@@ -3,7 +3,6 @@
     <head>
         <title>Side Quests</title>
         <link rel="stylesheet" href="Style.css">
-        <script src="todo.js"></script>
         <!-- Essential JS 2 Calendar's dependent material theme -->
         <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
         <link href="https://cdn.syncfusion.com/ej2/ej2-buttons/styles/material.css" rel="stylesheet" type="text/css" />
@@ -28,13 +27,22 @@
             	<h1>SIDE QUESTS</h1> 
             </div>
             <div class="panel left">
-				<p class="todo">TO DO LIST</h1>	
-                <div class="task buttons">
+				<p class="todo">TO DO LIST</h1>
+
+                <button onClick="showDropdown()" id="dropDown" type="button">Add To-Do Item +</button>
+
+                <div class="tasks" id="tasks" style="display: none">
                     <input type="text" id="input" placeholder="Add To-do item...">
-                    <button onClick="newListItem()" class="add" type="button">Add Task +</button>	
+                    <div id="datePick">
+                        <p>
+                            Select due date: <input id="dateSelect" type="date">
+                        </p>
+                    </div>
+                    <button onCLick="closeDrop()" id="closeDrop" class="add">Close Menu -</button>
+                    <button onClick="newListItem()" class="add" type="button">Add Task +</button>
                 </div>
                 <div class="list_wrap">
-                    <ul class="list" id="todo_list"></ul>
+                        <ul class="list" id="todo_list"></ul>
                 </div>
             </div>
             <div class="main body">
@@ -50,21 +58,14 @@
                         </script>
                     </div> 
                 </body> 
-            </div> 
+            </div>
+            
             <div class="panel right">            
-                <h1>About Us</h1>
-                <p>SideQuests is an open-source online personal and academic<br> 
-                    planner that is easy to use, takes up little digital space,<br> 
-                    and promotes productivity and motivation through rewards.</p>
-                <ul>
-                    <li>Track Your Tasks and Events</li>
-                    <li>Earn Points and Rewards</li>
-                    <li>Create Groups and Shared Tasks With Friends</li>
-                    
-                </ul>	
-                <p>Always Ad Free</p>
-            </div>          
+                <h1>Completed Totals</h1>
+            </div>
+
         </div>
+        <script src="todo.js"></script>
     </body>
 
 </html>
