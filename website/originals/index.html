@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>Side Quests</title>
+        <link rel="stylesheet" href="Style.css">
+        <script src="todo.js"></script>
+    </head>
+    <body>
+        <div class="topnav">
+            <a class="active" href="http://sidequests.pro">Home</a>
+            <a href="http://sidequests.pro/profile">Profile</a>
+            <a href="http://sidequests.pro/friends">Friends</a>
+            <a href="#about">About</a>
+        </div>
+        <div class="container">
+            <div class="header">
+            	<h1>SIDE QUESTS</h1> 
+            </div>
+            <div class="panel left">
+				<p class="todo">TO DO LIST</h1>	
+                <div class="task buttons">
+                    <input type="text" id="input" placeholder="Add To-do item...">
+                    <button onClick="newListItem()" class="add" type="button">Add Task +</button>	
+                </div>
+                <div class="list_wrap">
+                    <ul class="list" id="todo_list"></ul>
+                </div>
+            </div>
+            <div class="mainbody">
+				<h1>CALENDER</h1>                
+            </div>
+            <div class="panel right">
+				<h1>BOOKSHELF</h1>
+            </div>
+        </div>
+    </body>
+
+</html>

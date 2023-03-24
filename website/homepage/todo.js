@@ -1,4 +1,10 @@
 // dropdown
+pointTotal = 0;
+taskTotal = 0;
+document.getElementById("pointCount").innerText = pointTotal;
+document.getElementById("taskCount").innerText = taskTotal;
+
+
 
 function showDropdown() {
     document.getElementById("tasks").style.display = "block";
@@ -19,6 +25,14 @@ for (index=0; index<newList.length; index++) {
     closeButton.className = "delete";
     closeButton.appendChild(closeText);
     newList[index].appendChild(closeButton);
+
+    var completeButton = document.createElement("SPAN");
+    var completeText = document.createTextNode("\u2713");
+
+    completeButton.className = "complete";
+    completeButton.appendChild(completeText);
+    newList[index].appendChild(completeButton);
+
 }
 
 
@@ -27,6 +41,17 @@ var index;
 
 for (index=0; index<close.length; index++) {
     close[index].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+        console.log("the button was pressed out of the function");
+    }
+}
+
+var complete = document.getElementsByClassName("complete");
+var index;
+
+for (index=0; index<complete.length; index++) {
+    complete[index].onclick = function() {
         var div = this.parentElement;
         div.style.display = "none";
     }
@@ -40,11 +65,26 @@ function newListItem() {
 
     var dateInput = document.getElementById("dateSelect").value;
     var dateText = document.createTextNode(dateInput);
-    
-    var fillerText = document.createTextNode(" Due: ");
 
+    var prioritySelect = document.getElementsByName('priority_level');
+          
+        for(i = 0; i < prioritySelect.length; i++) {
+            if(prioritySelect[i].checked)
+            priorityText = document.createTextNode(prioritySelect[i].value);
+        }
+    
+    var fillerText = document.createTextNode("\nDue: ");
+
+    var fillerText2 = document.createTextNode("\nPriority Level: ");
+
+    var br = document.createElement("br");
+    var br2 = document.createElement("br");
 
     li.appendChild(inputText);
+    li.appendChild(br2);
+    li.appendChild(fillerText2);
+    li.appendChild(priorityText);
+    li.appendChild(br);
     li.appendChild(fillerText);
     li.appendChild(dateText);
 
@@ -68,6 +108,51 @@ function newListItem() {
         close[index].onclick = function() {
             var div = this.parentElement;
             div.style.display = "none";
+            console.log("the button was pressed inside of the function");
         }
     }
+
+    var completeButton = document.createElement("SPAN");
+    var completeText = document.createTextNode("\u2713");
+
+    completeButton.className = "complete";
+    completeButton.appendChild(completeText);
+
+    li.appendChild(completeButton);
+
+    for (index=0; index<complete.length; index++) {
+        complete[index].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+            var priority = document.getElementsByName('priority_level');
+            for(i = 0; i < priority.length; i++) {
+                if(priority[i].checked)
+                points = priority[i].value;
+            }
+
+            totalTasks();
+            totalPoints( priority );
+        }
+    }
+
+}
+
+function totalPoints( priority ) {
+    points = Number(points);
+    pointTotal = points + pointTotal;
+
+    document.getElementById("pointCount").innerText = pointTotal;
+    console.log("total points ran");
+    return pointTotal;
+}
+
+function totalTasks() {
+    taskTotal = taskTotal + 1;
+
+    document.getElementById("taskCount").innerText = taskTotal;
+
+    console.log("total tasks ran");
+
+    return taskTotal;
+
 }
