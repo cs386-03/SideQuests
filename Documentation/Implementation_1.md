@@ -1,6 +1,9 @@
 # Deliverable 4 - First Implementation
 
 ## 1. Introduction
+SideQuests is an easy to use website that assists in navigating the chaos of life with reminders and rewards, praising you for staying on track. The main features of this product are being able to track your progress and get rewarded for completing tasks. Users have the option of listing tasks and the date that they need to be completed by. Users can also collaborate with their friends on tasks, and see their friends status's. As of right now, the features implemented are as follows. There is a calendar on the webpage that shows the current month and highlights the current day. There is a to-do list that users can add tasks to. They can also delete the tasks off of the list. There are pages for the friends list, and the trophies that have been earned, although there is currently no database to hold the information. There is also an initial login page, but again without the database it is currently nonfunctional. 
+
+https://github.com/cs386-03/SideQuests
 
 ## 2. Implemented Requirments
 
