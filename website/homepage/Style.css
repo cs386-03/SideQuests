@@ -3,7 +3,7 @@ This is the container for the sections
 */
 
 html {
-  height: 100%;
+  height: auto;
 }
 
 
@@ -58,14 +58,20 @@ div.panel.right {
 }
 
 #points p{
-  height: 100%
+  height: 100%;
+  margin-bottom: 40%;
+  font-size: 150%;
+}
+
+#prioritySelect {
+  color:#8DBFC9;
 }
 
 
 /* This is the TO-DO list css */
 
 #dropDown {
-  width: 100%;
+  width: auto;
   margin: 10px;
   border: #8DBFC9;
   background-color: #16262F;
@@ -154,6 +160,7 @@ li {
   font-size: 200%;
   color: #8DBFC9;
   border-bottom: solid #8DBFC9;
+  width: 100%;
 }
 
 #todo_list {

@@ -38,6 +38,14 @@
                             Select due date: <input id="dateSelect" type="date">
                         </p>
                     </div>
+                    <div id="prioritySelect">
+                        Select priority level: <input type="radio" id="priotity1" name="priority_level" value=1>
+                        <label for="priotity1">1</label>
+                        <input type="radio" id="priotity2" name="priority_level" value=2>
+                        <label for="priotity2">2</label>
+                        <input type="radio" id="priotity3" name="priority_level" value=3>
+                        <label for="priotity3">3</label>
+                    </div>
                     <button onCLick="closeDrop()" id="closeDrop" class="add">Close Menu -</button>
                     <button onClick="newListItem()" class="add" type="button">Add Task +</button>
                 </div>
@@ -64,7 +72,9 @@
                 <h1>Completed Totals</h1>
                 <div id="points"/>
                     <p>Total Points:</p>
+                    <p id="pointCount"></p>
                     <p>Total Tasks Completed</p>
+                    <p id="taskCount"></p>
                 </div>
             </div>
 
