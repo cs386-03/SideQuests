@@ -32,6 +32,14 @@ https://github.com/cs386-03/SideQuests
 **Print screen:**
 ![D4_sec2](https://user-images.githubusercontent.com/102330088/227682723-b52f82c9-8393-401d-a1d4-a0361be19ff6.jpg)
 
+**Requirement:** _As a student, I want to be able to show my friends my rewards so that I can show them my progress and we can encourage each other to succeed._ \
+**Issue:** [Issue #104](https://github.com/cs386-03/SideQuests/issues/104)\
+**Pull Request:** [Pull #86](https://github.com/cs386-03/SideQuests/pull/86)\
+**Implemented by:** Joshua VanderMeer\
+**Approved By:** Caden Tedeschi\
+**Print screen:** \
+![Friends List](friendsList.png)
+
 ## 3. Tests
 
 ## 4. Adopted Technologies
@@ -64,6 +72,7 @@ Another part that needed to be researched was the log in page, which needs to sa
 As our project continues, there will likely be more research, such as on a more proper calendar implementation with timestamps, login software, and connecting with other friends with accounts and being able to share information stored within profiles.
 
 ## 6. Deployment
+[http://sidequests.pro/](http://sidequests.pro/) This is the URL and website to which our product is being deployed to. We are also using host winds to host the webserver to run this website.  To visit just head to this link currently if you press login it will take you past the login page to our homepage. From Here you can look at your to-do list and calendar and also redirect to your profile or friends list. 
 
 ## 7. Licensing
 
@@ -80,5 +89,6 @@ We wanted our site to have a dark mode theme and be similar in aesthetic to the 
 ![Look and Feel Trophy](trophy1.png)
 
 ## 10. Lessons Learned
+In this first implementation we as a group have learned some valuable lessons one of the big ones being that even with GitHub communication is critical to prevent overlaps and other development issues. This happened a few times with people changing files to fit what they were developing and this caused a massive overlap and bottleneck of changes. So going forward we will increase communication. We also learned that it's okay to work in groups and ask question if you get stuck because it helps keep things moving. Overall, we are doing well as a group just some minor fixes to be made with communication and we will be on our way. 
 
 ## 11. Demo
