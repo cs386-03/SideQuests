@@ -72,6 +72,7 @@ Another part that needed to be researched was the log in page, which needs to sa
 As our project continues, there will likely be more research, such as on a more proper calendar implementation with timestamps, login software, and connecting with other friends with accounts and being able to share information stored within profiles.
 
 ## 6. Deployment
+[http://sidequests.pro/](http://sidequests.pro/) This is the URL and website to which our product is being deployed to. We are also using host winds to host the webserver to run this website.  To visit just head to this link currently if you press login it will take you past the login page to our homepage. From Here you can look at your to-do list and calendar and also redirect to your profile or friends list. 
 
 ## 7. Licensing
 
@@ -88,5 +89,6 @@ We wanted our site to have a dark mode theme and be similar in aesthetic to the 
 ![Look and Feel Trophy](trophy1.png)
 
 ## 10. Lessons Learned
+In this first implementation we as a group have learned some valuable lessons one of the big ones being that even with GitHub communication is critical to prevent overlaps and other development issues. This happened a few times with people changing files to fit what they were developing and this caused a massive overlap and bottleneck of changes. So going forward we will increase communication. We also learned that it's okay to work in groups and ask question if you get stuck because it helps keep things moving. Overall, we are doing well as a group just some minor fixes to be made with communication and we will be on our way. 
 
 ## 11. Demo
