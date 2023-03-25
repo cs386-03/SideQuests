@@ -38,7 +38,7 @@ https://github.com/cs386-03/SideQuests
 **Implemented by:** Joshua VanderMeer\
 **Approved By:** Caden Tedeschi\
 **Print screen:** \
-![Login Form](friendsList.png)
+![Friends List](friendsList.png)
 
 ## 3. Tests
 
