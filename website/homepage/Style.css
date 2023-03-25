@@ -20,6 +20,54 @@ div.container {
     "panleft mainbody panright";
 }
 
+
+table{
+  *background-color: #16262F;
+  color:#8DBFC9;
+}
+
+
+td{
+  color:#8DBFC9;
+}
+
+tr{
+  color: aliceblue;
+}
+
+.e-day, th, .e-date-icon-prev, .e-date-icon-next, .e-today{
+  color:#8DBFC9 !important;
+  background-color:#16262F;
+}
+
+.e-footer-container{
+  background-color:#16262F !important;
+}
+
+.e-calendar .e-content td.e-selected span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-selected span.e-day{
+  background-color: #16262F !important;
+  border: 1px solid #8DBFC9 !important;
+}
+
+
+
+.e-calendar .e-content td.e-today span.e-day, .e-calendar .e-content td.e-focused-date.e-today span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-today span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-focused-date.e-today span.e-day {
+  background: none;
+  border: 2px solid #8DBFC9 !important;
+  border-radius: 50%;
+  color: #8DBFC9;
+}
+
+.e-calendar .e-content td.e-today.e-selected span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-today.e-selected span.e-day{
+  border: 1px solid #8DBFC9;
+}
+
+
+#element {
+  width: 500px;
+  background-color: #16262F;
+}
+
 div.header {
   margin: 30px auto;
   color: #8DBFC9;
@@ -76,7 +124,6 @@ div.panel.right {
   border: #8DBFC9;
   background-color: #16262F;
   color: #8DBFC9;
-  font-family: "Cabin Sketch";
   font-size: 90%;
 }
 
@@ -109,7 +156,6 @@ div.tasks {
   border: #8DBFC9;
   background-color: #16262F;
   color: #8DBFC9;
-  font-family: "Cabin Sketch";
   font-size: 90%;
 }
 
@@ -119,7 +165,6 @@ div.tasks {
   margin: 0 0 10px 10px;
   width: 75%;
   padding: 10px;
-  font-family: "Cabin Sketch";
   font-size: 70%;
   border: solid 1px #8DBFC9;
   border-color: #8DBFC9;
@@ -144,7 +189,6 @@ div.tasks {
 }
 
 .list {
-  font-family: "Cabin Sketch";
   color: #8DBFC9;
   margin-left: 0;
   width: 100%;
@@ -156,7 +200,6 @@ li {
 }
 
 .todo {
-  font-family: "Cabin Sketch";
   font-size: 200%;
   color: #8DBFC9;
   border-bottom: solid #8DBFC9;
