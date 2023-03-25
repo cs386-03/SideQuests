@@ -32,6 +32,14 @@ https://github.com/cs386-03/SideQuests
 **Print screen:**
 ![D4_sec2](https://user-images.githubusercontent.com/102330088/227682723-b52f82c9-8393-401d-a1d4-a0361be19ff6.jpg)
 
+**Requirement:** _As a student, I want to be able to show my friends my rewards so that I can show them my progress and we can encourage each other to succeed._ \
+**Issue:** [Issue #104](https://github.com/cs386-03/SideQuests/issues/104)\
+**Pull Request:** [Pull #86](https://github.com/cs386-03/SideQuests/pull/86)\
+**Implemented by:** Joshua VanderMeer\
+**Approved By:** Caden Tedeschi\
+**Print screen:** \
+![Login Form](friendsList.png)
+
 ## 3. Tests
 
 ## 4. Adopted Technologies
