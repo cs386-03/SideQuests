@@ -122,27 +122,32 @@ function newListItem() {
 
     for (index=0; index<complete.length; index++) {
         complete[index].onclick = function() {
+            var newIndex = 0;
             var div = this.parentElement;
             div.style.display = "none";
-            var priority = document.getElementsByName('priority_level');
-            for(i = 0; i < priority.length; i++) {
-                if(priority[i].checked)
-                points = priority[i].value;
+            
+            var notIsFound = true;
+            while(notIsFound) {
+                if(div.innerHTML[newIndex - 2]==":") {
+                    points = div.innerHTML[newIndex];
+                    notIsFound = false;
+
+                }
+                newIndex = newIndex + 1;
             }
 
             totalTasks();
-            totalPoints( priority );
+            totalPoints( points );
         }
     }
 
 }
 
-function totalPoints( priority ) {
+function totalPoints( points ) {
     points = Number(points);
     pointTotal = points + pointTotal;
 
     document.getElementById("pointCount").innerText = pointTotal;
-    console.log("total points ran");
     return pointTotal;
 }
 
@@ -150,8 +155,6 @@ function totalTasks() {
     taskTotal = taskTotal + 1;
 
     document.getElementById("taskCount").innerText = taskTotal;
-
-    console.log("total tasks ran");
 
     return taskTotal;
 
