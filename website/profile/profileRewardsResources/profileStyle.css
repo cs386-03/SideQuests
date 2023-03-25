@@ -232,6 +232,10 @@ input {
 
 .submit {
   border-radius: 1em;
+  background-color: #263f4e;
+  padding: 0.5em;
+  border: 1px solid gray;
+  color: lightgray;
 }
 
 /* Trophy Description */
