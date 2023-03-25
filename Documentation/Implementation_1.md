@@ -24,6 +24,14 @@ https://github.com/cs386-03/SideQuests
 ![Reward List](rewardsList.png)
 ![Reward Description](rewardDescription.png)
 
+**Requirement:** _As a website user, I want to be able to message my friends so that I can get encouraged sharing progress._\
+**Issue:** [Issue #50](https://github.com/cs386-03/SideQuests/issues/50)\
+**Pull Request:** [Pull #89](https://github.com/cs386-03/SideQuests/pull/89)\
+**Implemented by:** Meaghan Freund\
+**Approved By:** Josh VanderMeer\
+**Print screen:**
+![D4_sec2](https://user-images.githubusercontent.com/102330088/227682723-b52f82c9-8393-401d-a1d4-a0361be19ff6.jpg)
+
 ## 3. Tests
 
 ## 4. Adopted Technologies
