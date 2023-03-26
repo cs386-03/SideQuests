@@ -79,7 +79,7 @@ As our project continues, there will likely be more research, such as on a more 
 We decided to use the MIT license for our project. The MIT license is a free copyright license that allows for people to collaborate and contribute to the project without over complicating things. This license allows for open source collaboration.\
 
 Here is a link to our MIT license:\
-[MIT license](https://github.com/mpoole1027/SideQuests/blob/main/LICENSE.md)
+[MIT license](https://github.com/cs386-03/SideQuests/blob/main/LICENSE.md)
 
 
 ## 8. Readme File
