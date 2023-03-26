@@ -28,7 +28,7 @@ https://github.com/cs386-03/SideQuests
 **Issue:** [Issue #50](https://github.com/cs386-03/SideQuests/issues/50)\
 **Pull Request:** [Pull #89](https://github.com/cs386-03/SideQuests/pull/89)\
 **Implemented by:** Meaghan Freund\
-**Approved By:** Josh VanderMeer\
+**Approved By:** Joshua VanderMeer\
 **Print screen:**
 ![D4_sec2](https://user-images.githubusercontent.com/102330088/227682723-b52f82c9-8393-401d-a1d4-a0361be19ff6.jpg)
 
@@ -47,6 +47,14 @@ https://github.com/cs386-03/SideQuests
 **Approved By:** Lauren Farr\
 **Print screen:** \
 ![TO-DO list](TODO_listSS.png)
+
+**Requirement:** _As a website user, I want to be able to have a calendar and tasks on one page so that I can save time._\
+**Issue:** [Issue #40](https://github.com/cs386-03/SideQuests/issues/40)\
+**Pull Request:** [Pull #83](https://github.com/cs386-03/SideQuests/pull/83)\
+**Implemented by:** Samantha Madderom\
+**Approved By:** Joshua VanderMeer\
+**Print screen:** \
+![D4_sec2](https://user-images.githubusercontent.com/102330088/227811956-3d356008-7e81-493b-9f76-dccd3b4a4796.jpg)
 
 ## 3. Tests
 **Test Framework:** For our automated tests, we used the framework Jest, which can be accessed [here](https://jestjs.io/docs/getting-started). \
