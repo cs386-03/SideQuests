@@ -1,7 +1,7 @@
 # Deliverable 4 - First Implementation
 
 ## 1. Introduction
-SideQuests is an easy to use website that assists in navigating the chaos of life with reminders and rewards, praising you for staying on track. The main features of this product are being able to track your progress and get rewarded for completing tasks. Users have the option of listing tasks and the date that they need to be completed by. Users can also collaborate with their friends on tasks, and see their friends status's. As of right now, the features implemented are as follows. There is a calendar on the webpage that shows the current month and highlights the current day. There is a to-do list that users can add tasks to. They can also delete the tasks off of the list. There are pages for the friends list, and the trophies that have been earned, although there is currently no database to hold the information. There is also an initial login page, but again without the database it is currently nonfunctional. 
+SideQuests is an easy to use website that assists in navigating the chaos of life with reminders and rewards, praising you for staying on track. The main features of this product are being able to track your progress and get rewarded for completing tasks. Users have the option of listing tasks and the date that they need to be completed by. Users can also collaborate with their friends on tasks, and see their friends status's. As of right now, the features implemented are as follows. There is a calendar on the webpage that shows the current month and highlights the current day. There is a to-do list that users can add tasks to. They can also delete the tasks off of the list. There are pages for the friends list, and the trophies that have been earned, although there is currently no database to hold the information. There is also an initial login page, but again without the database it is currently nonfunctional.
 
 https://github.com/cs386-03/SideQuests
 
@@ -72,9 +72,15 @@ Another part that needed to be researched was the log in page, which needs to sa
 As our project continues, there will likely be more research, such as on a more proper calendar implementation with timestamps, login software, and connecting with other friends with accounts and being able to share information stored within profiles.
 
 ## 6. Deployment
-[http://sidequests.pro/](http://sidequests.pro/) This is the URL and website to which our product is being deployed to. We are also using host winds to host the webserver to run this website.  To visit just head to this link currently if you press login it will take you past the login page to our homepage. From Here you can look at your to-do list and calendar and also redirect to your profile or friends list. 
+[http://sidequests.pro/](http://sidequests.pro/) This is the URL and website to which our product is being deployed to. We are also using host winds to host the webserver to run this website.  To visit just head to this link currently if you press login it will take you past the login page to our homepage. From Here you can look at your to-do list and calendar and also redirect to your profile or friends list.
 
 ## 7. Licensing
+
+We decided to use the MIT license for our project. The MIT license is a free copyright license that allows for people to collaborate and contribute to the project without over complicating things. This license allows for open source collaboration.\
+
+Here is a link to our MIT license:\
+[MIT license](https://github.com/mpoole1027/SideQuests/blob/main/LICENSE.md)
+
 
 ## 8. Readme File
 
@@ -89,6 +95,6 @@ We wanted our site to have a dark mode theme and be similar in aesthetic to the 
 ![Look and Feel Trophy](trophy1.png)
 
 ## 10. Lessons Learned
-In this first implementation we as a group have learned some valuable lessons one of the big ones being that even with GitHub communication is critical to prevent overlaps and other development issues. This happened a few times with people changing files to fit what they were developing and this caused a massive overlap and bottleneck of changes. So going forward we will increase communication. We also learned that it's okay to work in groups and ask question if you get stuck because it helps keep things moving. Overall, we are doing well as a group just some minor fixes to be made with communication and we will be on our way. 
+In this first implementation we as a group have learned some valuable lessons one of the big ones being that even with GitHub communication is critical to prevent overlaps and other development issues. This happened a few times with people changing files to fit what they were developing and this caused a massive overlap and bottleneck of changes. So going forward we will increase communication. We also learned that it's okay to work in groups and ask question if you get stuck because it helps keep things moving. Overall, we are doing well as a group just some minor fixes to be made with communication and we will be on our way.
 
 ## 11. Demo
