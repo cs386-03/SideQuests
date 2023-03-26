@@ -49,6 +49,11 @@ https://github.com/cs386-03/SideQuests
 ![TO-DO list](TODO_listSS.png)
 
 ## 3. Tests
+**Test Framework:** For our automated tests, we used the framework Jest, which can be accessed [here](https://jestjs.io/docs/getting-started). \
+**Tests Folder:** The folder containing the tests can be accessed [here](https://github.com/cs386-03/SideQuests/tree/main/Tests). \
+**Example:** One thing we tested is a function that adds to the user's total accumulated points, given their existing total and recently accumulated points. The function adds the points and returns the total, and changes the inner text of the HTML to reflect the change in points. The test of this function ensures that the correct number is returned, and the correct text is displayed for the user. \
+**Print screen:** \
+![Test Results](TestResults.JPG)
 
 ## 4. Adopted Technologies
 **Visual Studio Code:**
