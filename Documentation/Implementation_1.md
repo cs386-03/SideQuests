@@ -40,6 +40,14 @@ https://github.com/cs386-03/SideQuests
 **Print screen:** \
 ![Friends List](friendsList.png)
 
+**Requirement:** _As a student, I want to be able to create my own tasks to add to my list, so that I can personalize the tasks to my own needs._ \
+**Issue:** [Issue #42](https://github.com/cs386-03/SideQuests/issues/42)\
+**Pull Request:** [Pull #97](https://github.com/cs386-03/SideQuests/pull/97)\
+**Implemented by:** Max Poole\
+**Approved By:** Lauren Farr\
+**Print screen:** \
+![TO-DO list](TODO_listSS.png)
+
 ## 3. Tests
 
 ## 4. Adopted Technologies
