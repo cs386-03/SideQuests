@@ -119,4 +119,4 @@ We wanted our site to have a dark mode theme and be similar in aesthetic to the 
 In this first implementation we as a group have learned some valuable lessons one of the big ones being that even with GitHub communication is critical to prevent overlaps and other development issues. This happened a few times with people changing files to fit what they were developing and this caused a massive overlap and bottleneck of changes. So going forward we will increase communication. We also learned that it's okay to work in groups and ask question if you get stuck because it helps keep things moving. Overall, we are doing well as a group just some minor fixes to be made with communication and we will be on our way.
 
 ## 11. Demo
-A demo of the system running can be found [here](https://github.com/cs386-03/SideQuests/tree/main/Demos/Demo_1.mp4).
+A demo of the system running can be downloaded [here](https://github.com/cs386-03/SideQuests/tree/main/Demos/Demo_1.mp4). Github does not allow files that large to be displayed directly.
