@@ -1,5 +1,14 @@
 "use strict";
 
+class Rewards {
+  constructor(value, image) {
+    this.value = value;
+    this.image = image;
+  }
+
+  share() {}
+}
+
 // On screen Buttons
 const editBtn = document.querySelector(".editButton");
 const submitBtn = document.querySelector(".submit");

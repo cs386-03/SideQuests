@@ -6,10 +6,14 @@ Every modern college student and working professional has hundreds of tasks to k
 
 ## 2. Architecture
 
+![diagram](D5Part2.png)
+
 ## 3. Class Diagram
+
 ![diagram](D5ClassDiagram.jpg)
 
 ## 4. Sequence Diagram
+
 ![sequence](https://user-images.githubusercontent.com/102330088/229657060-06900296-8f1f-479d-8ebe-94fd0a25b796.jpg)
 
 ## 5. Design Patterns
@@ -20,8 +24,8 @@ Every modern college student and working professional has hundreds of tasks to k
 
 **Open-Closed Principle:** This is the idea that classes are open to extension and closed to modification. This means that new functionality can be added to a class without the existing code being modified. While we do not have a current example of this, we will try our best to practice as we implement more.
 
-**Liskov Substitution Principle:** This is the idea that any subclass should be subtitutable for its base class. An example in our project are the classes Task and Shared Task. Any method that expects a Task should work as expected for a Shared Task. 
+**Liskov Substitution Principle:** This is the idea that any subclass should be subtitutable for its base class. An example in our project are the classes Task and Shared Task. Any method that expects a Task should work as expected for a Shared Task.
 
-**Interface Segregation Principle:** This is the idea that interfaces should be seperated that serve different purposes, to avoid overcrowding. We are implementing this by having seperate webpages for the Login, Tasks and Calendar, Profile, and Friends. 
+**Interface Segregation Principle:** This is the idea that interfaces should be seperated that serve different purposes, to avoid overcrowding. We are implementing this by having seperate webpages for the Login, Tasks and Calendar, Profile, and Friends.
 
-**Dependency Inversion Principle:** This is the idea that classes should be dependent on abstract classes instead of concrete classes. This allows for better extension of classes. The Task and Shared Task classes are again an example of this. Shared Task is dependent on Task, which is an abstract class. 
+**Dependency Inversion Principle:** This is the idea that classes should be dependent on abstract classes instead of concrete classes. This allows for better extension of classes. The Task and Shared Task classes are again an example of this. Shared Task is dependent on Task, which is an abstract class.
