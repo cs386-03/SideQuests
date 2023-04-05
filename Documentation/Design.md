@@ -7,6 +7,7 @@ Every modern college student and working professional has hundreds of tasks to k
 ## 2. Architecture
 
 ## 3. Class Diagram
+![diagram](D5ClassDiagram.jpg)
 
 ## 4. Sequence Diagram
 ![sequence](https://user-images.githubusercontent.com/102330088/229657060-06900296-8f1f-479d-8ebe-94fd0a25b796.jpg)
