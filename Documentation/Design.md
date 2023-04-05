@@ -13,6 +13,9 @@ Every modern college student and working professional has hundreds of tasks to k
 ![sequence](https://user-images.githubusercontent.com/102330088/229657060-06900296-8f1f-479d-8ebe-94fd0a25b796.jpg)
 
 ## 5. Design Patterns
+![D5](https://user-images.githubusercontent.com/102330088/230231254-a2ebab82-8487-49e7-bd3c-2a5cc424c76d.jpg)
+
+Classes: https://github.com/cs386-03/SideQuests/tree/main/website/originals
 
 ## 6. Design Principles
 
