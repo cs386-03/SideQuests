@@ -8,6 +8,8 @@ Every modern college student and working professional has hundreds of tasks to k
 
 ![diagram](D5Part2.png)
 
+This archtiecture is based off of UML package diagram for Mulit-Layered Web Application. We chose this architecture because we were able to identify 3 distinct layers to our program. The user interface, the data logic and the data itself. Using these layers the Multi-Layered architecture made the most sense.
+
 ## 3. Class Diagram
 
 ![diagram](D5ClassDiagram.jpg)
