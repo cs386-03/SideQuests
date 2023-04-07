@@ -23,7 +23,7 @@ This archtiecture is based off of UML package diagram for Mulit-Layered Web Appl
 
 Classes: https://github.com/cs386-03/SideQuests/tree/main/website/originals
 
-<img src="D5_TemplateDesign.jpg" alt= “” width="75%" height="75%">
+![D5](D5_TemplateDesignP5.jpg)
 
 Classes: https://github.com/cs386-03/SideQuests/tree/main/website/originals
 
