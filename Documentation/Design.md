@@ -23,7 +23,7 @@ This archtiecture is based off of UML package diagram for Mulit-Layered Web Appl
 
 Classes: https://github.com/cs386-03/SideQuests/tree/main/website/originals
 
-![D5](D5_TemplateDesignP5.jpg)
+![D5](D5_TemplateDesignP5.png)
 
 Classes: https://github.com/cs386-03/SideQuests/tree/main/website/originals
 
