@@ -23,6 +23,10 @@ This archtiecture is based off of UML package diagram for Mulit-Layered Web Appl
 
 Classes: https://github.com/cs386-03/SideQuests/tree/main/website/originals
 
+![D5](D5_TemplateDesignP5.png)
+
+Classes: https://github.com/cs386-03/SideQuests/tree/main/website/originals
+
 ## 6. Design Principles
 
 **Single Responsibility Principle:** This is the idea that a class does only one thing and is only affected by changes in one kind of logic. For example, the Task class is only responsible for managing tasks. This class is not affected by logic outside of creating and managing tasks.
