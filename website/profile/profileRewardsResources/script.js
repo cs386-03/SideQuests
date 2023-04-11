@@ -1,9 +1,9 @@
 "use strict";
 
 class Rewards {
-  constructor(value, image) {
+  constructor(value, amount) {
     this.value = value;
-    this.image = image;
+    this.amount = amount;
   }
 
   share() {}
@@ -33,6 +33,7 @@ let inputFile;
 
 // Trophy table data
 const tableData = document.getElementsByTagName("td");
+const table = document.querySelector(`table`);
 
 // getting current time when date is called
 const date = new Date();
@@ -43,6 +44,36 @@ const closePopup = () => {
   description.classList.add("hidden");
   formBox.classList.add("hidden");
   birthdayMes.classList.add("hidden");
+};
+
+const createTable = () => {
+  let userRewards = Rewards(10, 5);
+  let index;
+
+  // empty table contents
+  table.innerHTML = "";
+
+  for (index = 0; index < userRewards.amount; index++) {
+    let html = `
+    <td>
+    <img
+      class="trophy"
+      src="profileRewardsResources/trophies/1pt.png"
+    />
+    </td>
+    <div class="description description--${index} hidden">
+      <img
+        class="trophy"
+        src="profileRewardsResources/trophies/1pt.png"
+      />
+      <h3>Trophy ${index + 1} Name</h3>
+      <h3>Trophy Description</h3>
+      <h4>Acquisition Events</h4>
+    </div>
+    `;
+
+    table.insertAdjacentHTML("afterbegin", html);
+  }
 };
 
 const isBirthday = (dateOfBirth, date) => {
