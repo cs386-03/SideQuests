@@ -1,13 +1,15 @@
 "use strict";
 
+/////////////////////////////////CLASSES///////////////////////////////////////
+
 class Rewards {
   constructor(value, amount) {
     this.value = value;
     this.amount = amount;
   }
-
-  share() {}
 }
+
+//////////////////////////GLOBAL VARIABLES/////////////////////////////////////
 
 // On screen Buttons
 const editBtn = document.querySelector(".editButton");
@@ -32,47 +34,84 @@ const avatar = document.querySelector(".avatar");
 let inputFile;
 
 // Trophy table data
+const table = document.querySelector(".trophyTable");
 const tableData = document.getElementsByTagName("td");
-const table = document.querySelector(`table`);
 
 // getting current time when date is called
 const date = new Date();
 
-// Closes any popup open
-const closePopup = () => {
-  overlay.classList.add("hidden");
-  description.classList.add("hidden");
-  formBox.classList.add("hidden");
-  birthdayMes.classList.add("hidden");
-};
+///////////////////////////////FUNCTIONS///////////////////////////////////////
 
+// Create Reward table
 const createTable = () => {
-  let userRewards = Rewards(10, 5);
-  let index;
+  // declare variables
+  let userRewards = new Rewards(10, 7);
+  let index, tdIndex, tableDataHTML, row, cell, divClassHTML;
+  let rowIndex = 0,
+    cellIndex = 0;
+  let points = [1, 10, 25, 50, 100];
 
   // empty table contents
   table.innerHTML = "";
 
-  for (index = 0; index < userRewards.amount; index++) {
-    let html = `
+  // create first row
+  row = table.insertRow(rowIndex);
+
+  // loop until # of awards user has is hit
+  for (index = 1; index < userRewards.amount + 1; index++) {
+    // table data HTML code to be inserted
+    tableDataHTML = `
     <td>
-    <img
-      class="trophy"
-      src="profileRewardsResources/trophies/1pt.png"
-    />
-    </td>
-    <div class="description description--${index} hidden">
       <img
         class="trophy"
-        src="profileRewardsResources/trophies/1pt.png"
+        src="profileRewardsResources/trophies/${
+          points[(index - 1) % points.length]
+        }pt.png"
       />
-      <h3>Trophy ${index + 1} Name</h3>
+    </td>
+  `;
+
+    // insert a new cell in the data
+    cell = row.insertCell(cellIndex);
+
+    // set the cell data
+    cell.innerHTML = tableDataHTML;
+
+    // increase cell index
+    cellIndex++;
+
+    // check when the 5th cell is found
+    if (index % 5 === 0 && index !== 0) {
+      // increase row index
+      rowIndex++;
+
+      // reset cell index value
+      cellIndex = 0;
+
+      // insert a new row into the table
+      row = table.insertRow(rowIndex);
+    }
+  }
+
+  // loop through all of the table data
+  for (tdIndex = 0; tdIndex < tableData.length; tdIndex++) {
+    // description modal HTML to be inserted
+    divClassHTML = `
+    <div class="description description--${tdIndex} hidden">
+      <img
+        class="trophy"
+        src="profileRewardsResources/trophies/${
+          points[tdIndex % points.length]
+        }pt.png"
+      />
+      <h3>Trophy ${tdIndex + 1} Name</h3>
       <h3>Trophy Description</h3>
       <h4>Acquisition Events</h4>
     </div>
     `;
 
-    table.insertAdjacentHTML("afterbegin", html);
+    // insert the HTML after the table data
+    tableData[tdIndex].insertAdjacentHTML("afterend", divClassHTML);
   }
 };
 
@@ -111,6 +150,20 @@ const isBirthday = (dateOfBirth, date) => {
     return false;
   }
 };
+
+// create rewards table
+createTable();
+
+// NEEDS TO BE BELOW CREATE TABLE CALL TO WORK PROPERLY
+// Closes any popup open
+const closePopup = () => {
+  overlay.classList.add("hidden");
+  formBox.classList.add("hidden");
+  birthdayMes.classList.add("hidden");
+  description.classList.add("hidden");
+};
+
+/////////////////////////////ON SCREEN EVENTS//////////////////////////////////
 
 // Shows box for profile information
 editBtn.addEventListener("click", (event) => {
