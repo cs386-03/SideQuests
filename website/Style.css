@@ -14,8 +14,7 @@ div.header {
   margin: 30px;
   color: #8DBFC9;
   text-align: center;                         
-  grid-area: head;  
-  border: 2px solid #8DBFC9;          
+  grid-area: head;           
 }
 div.footer {
   margin: 30px;
@@ -80,6 +79,14 @@ input {
   padding: 10px 16px;
   margin: 10px;
 }
+#signUp {
+  color: white;
+  background-color: #071A52;
+  text-decoration: none;
+  padding: 10px 16px;
+  margin: 10px;
+}
+
 
 /*
 This is the Top Nav Bar stuff
