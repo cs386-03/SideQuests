@@ -159,6 +159,32 @@ div.tasks {
   font-size: 90%;
 }
 
+#dateSort {
+  display:inline;
+  width: 20%;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-right: 75px;
+  border: #8DBFC9;
+  background-color: #16262F;
+  color: #8DBFC9;
+  font-size: 80%;
+}
+
+#prioritySort {
+  display:inline;
+  width: 20%;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-left: 75px;
+  border: #8DBFC9;
+  background-color: #16262F;
+  color: #8DBFC9;
+  font-size: 80%;
+}
+
+
+
 #input {
   background-color: #16262F;
   color: #8DBFC9;
