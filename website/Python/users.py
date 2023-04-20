@@ -80,7 +80,7 @@ class Users:
         else:
             # update tuple table
             sql = "update sidequests.Users set password = %s, name = %s, occupation = %s, birthday = %s, points = %s, completed_tasks = %s where username = %s"
-            values = (]self.get_pswd(), self.get_name(), self.get_occupation(), self.get_birthday(), self.get_points(), self.get_task_comp(), self.get_username())
+            values = (self.get_pswd(), self.get_name(), self.get_occupation(), self.get_birthday(), self.get_points(), self.get_task_comp(), self.get_username())
             connection.run_change(sql, values)
     
     def remove(self, user, pwd):
