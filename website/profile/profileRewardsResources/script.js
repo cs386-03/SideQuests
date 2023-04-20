@@ -106,7 +106,6 @@ const createTable = () => {
       />
       <h3>Trophy ${tdIndex + 1} Name</h3>
       <h3>Trophy Description</h3>
-      <h4>Acquisition Events</h4>
     </div>
     `;
 
