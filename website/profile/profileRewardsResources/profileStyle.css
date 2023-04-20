@@ -144,7 +144,7 @@ tr {
 td {
   padding: 1% 0;
   background-color: lightgray;
-  width: 20%;
+  width: fit-content;
   border-radius: 1em;
 }
 

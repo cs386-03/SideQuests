@@ -3,9 +3,8 @@
 /////////////////////////////////CLASSES///////////////////////////////////////
 
 class Rewards {
-  constructor(value, amount) {
-    this.value = value;
-    this.amount = amount;
+  constructor(pointValue) {
+    this.pointValue = pointValue;
   }
 }
 
@@ -42,14 +41,71 @@ const date = new Date();
 
 ///////////////////////////////FUNCTIONS///////////////////////////////////////
 
+// Get trophy description
+const changeDescription = (index) => {
+  let returnStr;
+
+  // check which index is being accessed and change description based off of trophy
+  switch (index) {
+    case 0:
+      returnStr = `You completed your first task! Great Job!`;
+      break;
+    case 1:
+      returnStr = `You're getting more done! Nice!`;
+      break;
+    case 2:
+      returnStr = `That's a lot of tasks!`;
+      break;
+    case 3:
+      returnStr = `Holy cow! You're doing great!`;
+      break;
+    case 4:
+      returnStr = `AMAZING! You're not getting anymore trophies after this though`;
+      break;
+    default:
+      returnStr = `HOW DID THIS HAPPEN!`;
+      break;
+  }
+
+  return returnStr;
+};
+
+const changeTrophyName = (index) => {
+  let returnStr;
+
+  switch (index) {
+    case 0:
+      returnStr = `1 Point`;
+      break;
+    case 1:
+      returnStr = `10 Points`;
+      break;
+    case 2:
+      returnStr = `25 Points`;
+      break;
+    case 3:
+      returnStr = `50 Points`;
+      break;
+    case 4:
+      returnStr = `100 Points`;
+      break;
+    default:
+      returnStr = `HOW DID THIS HAPPEN!`;
+      break;
+  }
+
+  return returnStr;
+};
+
 // Create Reward table
 const createTable = () => {
   // declare variables
-  let userRewards = new Rewards(10, 7);
-  let index, tdIndex, tableDataHTML, row, cell, divClassHTML;
+  let userRewards = new Rewards(120);
+  let index, tdIndex, tableDataHTML, row, cell, divClassHTML, loopCount;
   let rowIndex = 0,
     cellIndex = 0;
   let points = [1, 10, 25, 50, 100];
+  let description, trophyName;
 
   // empty table contents
   table.innerHTML = "";
@@ -57,8 +113,30 @@ const createTable = () => {
   // create first row
   row = table.insertRow(rowIndex);
 
+  // Loop through different types of points
+  for (index = 0; index < points.length; index++) {
+    // check which points value user score goes to
+    if (
+      userRewards.pointValue >= points[index] &&
+      userRewards.pointValue <= points[index + 1]
+    ) {
+      //set loopCount to index
+      loopCount = index + 1;
+      console.log(loopCount);
+
+      // otherwise, check if user has 100 or more points
+    } else if (userRewards.pointValue >= 100) {
+      // set the loop count to length of points array
+      loopCount = points.length;
+    }
+  }
+
   // loop until # of awards user has is hit
-  for (index = 1; index < userRewards.amount + 1; index++) {
+  for (index = loopCount; index > 0; index--) {
+    // Get Trophy Description and name
+    description = changeDescription(index - 1);
+    trophyName = changeTrophyName(index - 1);
+
     // table data HTML code to be inserted
     tableDataHTML = `
     <td>
@@ -69,48 +147,20 @@ const createTable = () => {
         }pt.png"
       />
     </td>
-  `;
-
-    // insert a new cell in the data
-    cell = row.insertCell(cellIndex);
-
-    // set the cell data
-    cell.innerHTML = tableDataHTML;
-
-    // increase cell index
-    cellIndex++;
-
-    // check when the 5th cell is found
-    if (index % 5 === 0 && index !== 0) {
-      // increase row index
-      rowIndex++;
-
-      // reset cell index value
-      cellIndex = 0;
-
-      // insert a new row into the table
-      row = table.insertRow(rowIndex);
-    }
-  }
-
-  // loop through all of the table data
-  for (tdIndex = 0; tdIndex < tableData.length; tdIndex++) {
-    // description modal HTML to be inserted
-    divClassHTML = `
-    <div class="description description--${tdIndex} hidden">
+    <div class="description description--${index - 1} hidden">
       <img
         class="trophy"
         src="profileRewardsResources/trophies/${
-          points[tdIndex % points.length]
+          points[(index - 1) % points.length]
         }pt.png"
       />
-      <h3>Trophy ${tdIndex + 1} Name</h3>
-      <h3>Trophy Description</h3>
+      <h3>${trophyName}</h3>
+      <h3>${description}</h3>
     </div>
     `;
 
     // insert the HTML after the table data
-    tableData[tdIndex].insertAdjacentHTML("afterend", divClassHTML);
+    table.insertAdjacentHTML("afterbegin", tableDataHTML);
   }
 };
 
@@ -238,13 +288,6 @@ overlay.addEventListener("click", (event) => {
   // Stops page from refreshing on click
   event.preventDefault();
   closePopup();
-});
-
-// close description/form box and blur when escape key is pressed
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    closePopup();
-  }
 });
 
 // Close Pop up using X button
