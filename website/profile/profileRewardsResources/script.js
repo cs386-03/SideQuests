@@ -3,9 +3,8 @@
 /////////////////////////////////CLASSES///////////////////////////////////////
 
 class Rewards {
-  constructor(value, amount) {
-    this.value = value;
-    this.amount = amount;
+  constructor(pointValue) {
+    this.pointValue = pointValue;
   }
 }
 
@@ -42,14 +41,77 @@ const date = new Date();
 
 ///////////////////////////////FUNCTIONS///////////////////////////////////////
 
+// Get trophy description
+const changeDescription = (index) => {
+  let returnStr;
+
+  // check which index is being accessed and change description based off of trophy
+  switch (index) {
+    case 0:
+      returnStr = `You completed your first task! Great Job!`;
+      break;
+    case 1:
+      returnStr = `You're getting more done! Nice!`;
+      break;
+    case 2:
+      returnStr = `That's a lot of tasks!`;
+      break;
+    case 3:
+      returnStr = `Holy cow! You're doing great!`;
+      break;
+    case 4:
+      returnStr = `That sure is a lot of stuff you've been doing. Keep it up!`;
+      break;
+    case 5:
+      returnStr = `AMAZING! You're not getting anymore trophies after this though`;
+      break;
+    default:
+      returnStr = `HOW DID THIS HAPPEN!`;
+      break;
+  }
+
+  return returnStr;
+};
+
+const changeTrophyName = (index) => {
+  let returnStr;
+
+  switch (index) {
+    case 0:
+      returnStr = `1 Point`;
+      break;
+    case 1:
+      returnStr = `10 Points`;
+      break;
+    case 2:
+      returnStr = `25 Points`;
+      break;
+    case 3:
+      returnStr = `50 Points`;
+      break;
+    case 4:
+      returnStr = `75 Points`;
+      break;
+    case 5:
+      returnStr = `100 Points`;
+      break;
+    default:
+      returnStr = `HOW DID THIS HAPPEN!`;
+      break;
+  }
+
+  return returnStr;
+};
+
 // Create Reward table
 const createTable = () => {
   // declare variables
-  let userRewards = new Rewards(10, 7);
-  let index, tdIndex, tableDataHTML, row, cell, divClassHTML;
+  let userRewards = new Rewards(120);
+  let index, tdIndex, tableDataHTML, row, cell, divClassHTML, loopCount;
   let rowIndex = 0,
     cellIndex = 0;
-  let points = [1, 10, 25, 50, 100];
+  let points = [1, 10, 25, 50, 75, 100];
+  let description, trophyName;
 
   // empty table contents
   table.innerHTML = "";
@@ -57,8 +119,25 @@ const createTable = () => {
   // create first row
   row = table.insertRow(rowIndex);
 
-  // loop until # of awards user has is hit
-  for (index = 1; index < userRewards.amount + 1; index++) {
+  // loop through points array
+  for (index = 0; index < points.length; index++) {
+    // check how many points user has compared to point goals
+    if (
+      userRewards.pointValue >= index &&
+      userRewards.pointValue <= index + 1
+    ) {
+      // set loop count according to points
+      loopCount = index;
+    }
+    // otherwise check if user has atleast 100 points
+    else if (userRewards.pointValue >= 100) {
+      // set loop count to point array length
+      loopCount = points.length;
+    }
+  }
+
+  // Loop through different types of points
+  for (index = 1; index < loopCount + 1; index++) {
     // table data HTML code to be inserted
     tableDataHTML = `
     <td>
@@ -81,7 +160,7 @@ const createTable = () => {
     cellIndex++;
 
     // check when the 5th cell is found
-    if (index % 5 === 0 && index !== 0) {
+    if (index % 2 === 0 && index !== 0) {
       // increase row index
       rowIndex++;
 
@@ -95,6 +174,10 @@ const createTable = () => {
 
   // loop through all of the table data
   for (tdIndex = 0; tdIndex < tableData.length; tdIndex++) {
+    // get description and name
+    description = changeDescription(tdIndex);
+    trophyName = changeTrophyName(tdIndex);
+
     // description modal HTML to be inserted
     divClassHTML = `
     <div class="description description--${tdIndex} hidden">
@@ -104,9 +187,8 @@ const createTable = () => {
           points[tdIndex % points.length]
         }pt.png"
       />
-      <h3>Trophy ${tdIndex + 1} Name</h3>
-      <h3>Trophy Description</h3>
-      <h4>Acquisition Events</h4>
+      <h3>${trophyName}</h3>
+      <h3>${description}</h3>
     </div>
     `;
 
@@ -239,13 +321,6 @@ overlay.addEventListener("click", (event) => {
   // Stops page from refreshing on click
   event.preventDefault();
   closePopup();
-});
-
-// close description/form box and blur when escape key is pressed
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
-    closePopup();
-  }
 });
 
 // Close Pop up using X button

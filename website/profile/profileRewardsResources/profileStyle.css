@@ -144,7 +144,7 @@ tr {
 td {
   padding: 1% 0;
   background-color: lightgray;
-  width: 20%;
+  width: fit-content;
   border-radius: 1em;
 }
 
@@ -169,7 +169,7 @@ td:hover {
 }
 
 .trophy {
-  width: 5em;
+  width: 7em;
   height: auto;
   display: block;
   margin: 0 auto;
@@ -313,10 +313,10 @@ div.topnav a.active {
 }
 
 .editButton {
-  background-color: #8dbfc9;
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 50%;
   margin: 5px;
-  border: 2px dotted #6f969e;
+  border: 2px solid rgba(38, 63, 78, 0.3);
   width: fit-content;
   justify-self: right;
 }
@@ -349,4 +349,8 @@ div.topnav a.active {
   float: right;
   color: grey;
   margin: 1em;
+}
+
+.close:hover {
+  cursor: pointer;
 }
