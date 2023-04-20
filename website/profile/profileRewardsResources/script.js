@@ -60,6 +60,9 @@ const changeDescription = (index) => {
       returnStr = `Holy cow! You're doing great!`;
       break;
     case 4:
+      returnStr = `That sure is a lot of stuff you've been doing. Keep it up!`;
+      break;
+    case 5:
       returnStr = `AMAZING! You're not getting anymore trophies after this though`;
       break;
     default:
@@ -87,6 +90,9 @@ const changeTrophyName = (index) => {
       returnStr = `50 Points`;
       break;
     case 4:
+      returnStr = `75 Points`;
+      break;
+    case 5:
       returnStr = `100 Points`;
       break;
     default:
@@ -104,7 +110,7 @@ const createTable = () => {
   let index, tdIndex, tableDataHTML, row, cell, divClassHTML, loopCount;
   let rowIndex = 0,
     cellIndex = 0;
-  let points = [1, 10, 25, 50, 100];
+  let points = [1, 10, 25, 50, 75, 100];
   let description, trophyName;
 
   // empty table contents
@@ -114,29 +120,7 @@ const createTable = () => {
   row = table.insertRow(rowIndex);
 
   // Loop through different types of points
-  for (index = 0; index < points.length; index++) {
-    // check which points value user score goes to
-    if (
-      userRewards.pointValue >= points[index] &&
-      userRewards.pointValue <= points[index + 1]
-    ) {
-      //set loopCount to index
-      loopCount = index + 1;
-      console.log(loopCount);
-
-      // otherwise, check if user has 100 or more points
-    } else if (userRewards.pointValue >= 100) {
-      // set the loop count to length of points array
-      loopCount = points.length;
-    }
-  }
-
-  // loop until # of awards user has is hit
-  for (index = loopCount; index > 0; index--) {
-    // Get Trophy Description and name
-    description = changeDescription(index - 1);
-    trophyName = changeTrophyName(index - 1);
-
+  for (index = 1; index < loopCount + 1; index++) {
     // table data HTML code to be inserted
     tableDataHTML = `
     <td>
@@ -147,11 +131,43 @@ const createTable = () => {
         }pt.png"
       />
     </td>
-    <div class="description description--${index - 1} hidden">
+  `;
+
+    // insert a new cell in the data
+    cell = row.insertCell(cellIndex);
+
+    // set the cell data
+    cell.innerHTML = tableDataHTML;
+
+    // increase cell index
+    cellIndex++;
+
+    // check when the 5th cell is found
+    if (index % 3 === 0 && index !== 0) {
+      // increase row index
+      rowIndex++;
+
+      // reset cell index value
+      cellIndex = 0;
+
+      // insert a new row into the table
+      row = table.insertRow(rowIndex);
+    }
+  }
+
+  // loop through all of the table data
+  for (tdIndex = 0; tdIndex < tableData.length; tdIndex++) {
+    // get description and name
+    description = changeDescription(tdIndex);
+    trophyName = changeTrophyName(tdIndex);
+
+    // description modal HTML to be inserted
+    divClassHTML = `
+    <div class="description description--${tdIndex} hidden">
       <img
         class="trophy"
         src="profileRewardsResources/trophies/${
-          points[(index - 1) % points.length]
+          points[tdIndex % points.length]
         }pt.png"
       />
       <h3>${trophyName}</h3>
@@ -160,7 +176,7 @@ const createTable = () => {
     `;
 
     // insert the HTML after the table data
-    table.insertAdjacentHTML("afterbegin", tableDataHTML);
+    tableData[tdIndex].insertAdjacentHTML("afterend", divClassHTML);
   }
 };
 
