@@ -119,6 +119,23 @@ const createTable = () => {
   // create first row
   row = table.insertRow(rowIndex);
 
+  // loop through points array
+  for (index = 0; index < points.length; index++) {
+    // check how many points user has compared to point goals
+    if (
+      userRewards.pointValue >= index &&
+      userRewards.pointValue <= index + 1
+    ) {
+      // set loop count according to points
+      loopCount = index;
+    }
+    // otherwise check if user has atleast 100 points
+    else if (userRewards.pointValue >= 100) {
+      // set loop count to point array length
+      loopCount = points.length;
+    }
+  }
+
   // Loop through different types of points
   for (index = 1; index < loopCount + 1; index++) {
     // table data HTML code to be inserted
@@ -143,7 +160,7 @@ const createTable = () => {
     cellIndex++;
 
     // check when the 5th cell is found
-    if (index % 3 === 0 && index !== 0) {
+    if (index % 2 === 0 && index !== 0) {
       // increase row index
       rowIndex++;
 
