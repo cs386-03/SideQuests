@@ -12,12 +12,13 @@ div.container {
   width: 100%;
   min-height: 100%;
   color: black;
-  grid-template-columns: 1fr 2fr 1fr;
-  grid-template-rows: 1fr 2fr 1fr;
+  grid-template-columns: 8ch auto;
+  grid-template-rows: 1fr;
   grid-template-areas:
     "head head head"
-    "panleft mainbody panright"
-    "panleft mainbody panright";
+    "panleft panleft panright"
+    "panleft panleft panright"
+    "bottom bottom bottom";
 }
 
 
@@ -35,67 +36,39 @@ tr{
   color: aliceblue;
 }
 
-.e-day, th, .e-date-icon-prev, .e-date-icon-next, .e-today{
-  color:#8DBFC9 !important;
-  background-color:#16262F;
-}
-
-.e-footer-container{
-  background-color:#16262F !important;
-}
-
-.e-calendar .e-content td.e-selected span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-selected span.e-day{
-  background-color: #16262F !important;
-  border: 1px solid #8DBFC9 !important;
-}
-
-
-
-.e-calendar .e-content td.e-today span.e-day, .e-calendar .e-content td.e-focused-date.e-today span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-today span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-focused-date.e-today span.e-day {
-  background: none;
-  border: 2px solid #8DBFC9 !important;
-  border-radius: 50%;
-  color: #8DBFC9;
-}
-
-.e-calendar .e-content td.e-today.e-selected span.e-day, .e-bigger.e-small .e-calendar .e-content td.e-today.e-selected span.e-day{
-  border: 1px solid #8DBFC9;
-}
-
-
-#element {
-  width: 500px;
-  background-color: #16262F;
-}
-
 div.header {
   margin: 30px auto;
   color: #8DBFC9;
   text-align: center;
   grid-area: head;
-  /*border: 2px solid #8DBFC9;*/
 }
 
-div.main.body {
+div.panel.right {
   margin: 30px auto;
   color: #8DBFC9;
   text-align: center;
-  grid-area: mainbody;
+  grid-area: panright;
   border: 2px solid #8DBFC9;
 }
 
 div.panel.left {
   margin: 30px;
+  margin-left: 60px;
+  width: 500px;
   grid-area: panleft;
   min-height: 300px;
   text-align: center;
   border: 2px solid #8DBFC9;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
-div.panel.right {
-  margin: 30px;
-  grid-area: panright;
+div.footer {
+  margin: 0 auto;
+  max-height: 350px;
+  height: 100%;
+  width: 75%;
+  line-height: 0.01pt;
+  grid-area: bottom;
   text-align: center;
   border: 2px solid #8DBFC9;
   color:#8DBFC9;
@@ -106,6 +79,7 @@ div.panel.right {
 }
 
 #points p{
+  margin-left: 25px;
   height: 100%;
   margin-bottom: 10%;
   font-size: 150%;
@@ -216,7 +190,7 @@ div.tasks {
 
 .list {
   color: #8DBFC9;
-  margin-left: 0;
+  margin-left: 40px;
   width: 100%;
 }
 
