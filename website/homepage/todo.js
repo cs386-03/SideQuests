@@ -189,6 +189,14 @@ function sortByDate(){
         switching = false;
 
         for(i = 0; i < (tempList.length - 1); i++){
+            year = '';
+            month = '';
+            day = '';
+
+            nextYear = '';
+            nextMonth = '';
+            nextDay = '';
+
             shouldSwitch = false
 
             var notIsFound = true;
@@ -214,9 +222,9 @@ function sortByDate(){
             while(notIsFound) {
                 if(tempList[i + 1][newIndex - 2]==":" && tempList[i + 1][newIndex - 3]=="e") {
 
-                    nextYear = tempList[i + 1][newIndex] + tempList[i][newIndex + 1] + tempList[i + 1][newIndex + 2] + tempList[i + 1][newIndex + 3];
+                    nextYear = tempList[i + 1][newIndex] + tempList[i + 1][newIndex + 1] + tempList[i + 1][newIndex + 2] + tempList[i + 1][newIndex + 3];
                     nextMonth = tempList[i + 1][newIndex + 5] + tempList[i + 1][newIndex + 6];
-                    nextDay = tempList[i + 1][newIndex + 8]+tempList[i + 1][newIndex + 9];
+                    nextDay = tempList[i + 1][newIndex + 8] + tempList[i + 1][newIndex + 9];
 
                     notIsFound = false;
 
@@ -224,27 +232,17 @@ function sortByDate(){
 
                 newIndex = newIndex + 1;
             }
- 
-            if(Number(year) > Number(nextYear)){
+            
 
+            var yearComp = (Number(year)*10000) + (Number(month)*100) + Number(day);
+            var nextYearComp =(Number(nextYear)*10000) + (Number(nextMonth)*100) + Number(nextDay);
+
+
+            if(yearComp > nextYearComp){
                 shouldSwitch = true;
                 break;
-
             }
-
-            else if( Number(month) > Number(nextMonth)){
-
-                shouldSwitch = true;
-                break;
-
-            }
-
-            else if( Number(day) > Number(nextDay)){
-
-                shouldSwitch = true;
-                break;
-
-            }            
+    
         }
         
         if ( shouldSwitch ){
@@ -264,9 +262,7 @@ function sortByDate(){
     
     addIndex = 0;
 
-
     while (addIndex < tempList.length){
-        console.log("in the while loop");
         var li = document.createElement("li");
 
         var fillerText = document.createTextNode("\nDue: ");
