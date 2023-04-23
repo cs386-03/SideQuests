@@ -13,7 +13,7 @@ https://github.com/cs386-03/SideQuests
 **Implemented by:** Lauren Farr\
 **Approved By:** Joshua VanderMeer\
 **Print screen:** \
-![Login Form](LoginForm.JPG)
+![LoginForm](https://user-images.githubusercontent.com/102330088/227814303-962606b5-0c5f-48f7-b100-ab9d6f76ec69.jpg)
 
 **Requirement:** _As a website user, I want to be able to see the rewards I have earned so I know what I have completed_\
 **Issue:** [Issue #45](https://github.com/cs386-03/SideQuests/issues/45) \
@@ -21,8 +21,8 @@ https://github.com/cs386-03/SideQuests
 **Implemented by:** Caden Tedeschi\
 **Approved By:** Lauren Farr\
 **Print screen:**\
-![Reward List](rewardsList.png)
-![Reward Description](rewardDescription.png)
+![rewardsList](https://user-images.githubusercontent.com/102330088/227814331-9c7d7427-1b64-4b14-9775-8d6f24347b91.png)
+![rewardDescription](https://user-images.githubusercontent.com/102330088/227814372-0bd58583-b809-4881-b5fa-bdde6e66f455.png)
 
 **Requirement:** _As a website user, I want to be able to message my friends so that I can get encouraged sharing progress._\
 **Issue:** [Issue #50](https://github.com/cs386-03/SideQuests/issues/50)\
@@ -38,7 +38,7 @@ https://github.com/cs386-03/SideQuests
 **Implemented by:** Joshua VanderMeer\
 **Approved By:** Caden Tedeschi\
 **Print screen:** \
-![Friends List](friendsList.png)
+![friendsList](https://user-images.githubusercontent.com/102330088/227814517-99cdf61c-f5d0-433f-8853-dafffdbc34de.png)
 
 **Requirement:** _As a student, I want to be able to create my own tasks to add to my list, so that I can personalize the tasks to my own needs._ \
 **Issue:** [Issue #42](https://github.com/cs386-03/SideQuests/issues/42)\
@@ -46,7 +46,7 @@ https://github.com/cs386-03/SideQuests
 **Implemented by:** Max Poole\
 **Approved By:** Lauren Farr\
 **Print screen:** \
-![TO-DO list](TODO_listSS.png)
+<img width="420" alt="TODO_listSS" src="https://user-images.githubusercontent.com/102330088/227814553-49789cb5-ee75-4ed8-b896-4918dbaf98af.png">
 
 **Requirement:** _As a website user, I want to be able to have a calendar and tasks on one page so that I can save time._\
 **Issue:** [Issue #40](https://github.com/cs386-03/SideQuests/issues/40)\
@@ -61,7 +61,7 @@ https://github.com/cs386-03/SideQuests
 **Tests Folder:** The folder containing the tests can be accessed [here](https://github.com/cs386-03/SideQuests/tree/main/Tests). \
 **Example:** One thing we tested is a function that adds to the user's total accumulated points, given their existing total and recently accumulated points. The function adds the points and returns the total, and changes the inner text of the HTML to reflect the change in points. The test of this function ensures that the correct number is returned, and the correct text is displayed for the user. \
 **Print screen:** \
-![Test Results](TestResults.JPG)
+![TestResults](https://user-images.githubusercontent.com/102330088/227814584-965409b8-4a6c-454f-9ec4-0f005f624b7d.jpg)
 
 ## 4. Adopted Technologies
 **Visual Studio Code:**
@@ -112,8 +112,8 @@ The readme file has links to both the Contributing and Code of Conduct files \
 
 We wanted our site to have a dark mode theme and be similar in aesthetic to the Github or Discord's dark mode. Our background colors include dark gray, navy blue, and black, while the text and highlights are in white and light blue. The dark color scheme helps the awards stand out. For the awards - and eventually for our main logo - we decided to go with a 16-bit, pixelated art style. This art and the name of the software are reminiscent of older videogames. These style choices give the idea that checking things off your to-do list is like a game, encouraging productivity and completion of important real-life tasks.
 
-![Look and Feel Login Screen](D4_Part9_1.JPG)
-![Look and Feel Trophy](trophy1.png)
+![Look and Feel Login Screen](https://user-images.githubusercontent.com/102330088/227814658-ef024ca6-ccea-4330-97a0-790dda518a99.jpg)
+![Look and Feel Trophy](https://user-images.githubusercontent.com/102330088/227814661-548c808b-bd61-4a85-8e33-129cc340bda8.png)
 
 ## 10. Lessons Learned
 In this first implementation we as a group have learned some valuable lessons one of the big ones being that even with GitHub communication is critical to prevent overlaps and other development issues. This happened a few times with people changing files to fit what they were developing and this caused a massive overlap and bottleneck of changes. So going forward we will increase communication. We also learned that it's okay to work in groups and ask question if you get stuck because it helps keep things moving. Overall, we are doing well as a group just some minor fixes to be made with communication and we will be on our way.
