@@ -118,8 +118,9 @@ body, *{
     clear:both;
 }
 
-d.today{
-    color: purple;
+.today{
+    color: #16262F;
+    background-color: #8DBFC9;
 }
 
 @media only screen and (max-width: 960px) {
