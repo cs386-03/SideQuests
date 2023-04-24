@@ -105,6 +105,9 @@ function loadCalendarDays() {
         document.getElementById("calendarDays").appendChild(d);
     }
 
+     /* line I'm adding, thats currently breaking the whole thing, yay */
+     document.getElementById('calendarday_' + (new Date()).getDate()).classList.add('today');
+
     var clear = document.createElement("div");
     clear.className = "clear";
     document.getElementById("calendarDays").appendChild(clear);
