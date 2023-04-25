@@ -1,10 +1,5 @@
-######
-# Homework 4: Python + MySQL connection
-# Students: <Max Poole>, (6160489)
-#           <Josh VanderMeer>, (<6099420>)
-######
-
 # TODO 1 (4 points). Import the Mysql connector
+#pip install mysql-connector-python
 import mysql.connector
 
 

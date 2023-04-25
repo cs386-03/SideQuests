@@ -38,7 +38,8 @@ class Reward:
         connection = Connection("localhost", user, pwd, "sidequests")
         sql = "select user_id from Rewards;"
         values = ''
-        result = connection.run_select(sql, value)
+        cleaned = []
+        result = connection.run_select(sql, values)
         for index in range(0, len(result)-1):
             cleaned.append(result[index][0])
 

@@ -67,20 +67,21 @@ class Users:
         connection = Connection("localhost", user, pwd, "sidequests")
         sql = "select identification from Users;"
         values = ''
-        result = connection.run_select(sql, value)
-        for index in range(0, len(result)-1):
+        cleaned = []
+        result = connection.run_select(sql, values)
+        for index in range(0, len(result)):
             cleaned.append(result[index][0])
 
         # test if not in table
-        if self.get_id() not in cleaned:
+        if int(self.get_id()) not in cleaned:
             # add to tuple table
             sql = "insert into sidequests.Users(identification, username, password, name, occupation, birthday, points, completed_tasks) values (%s, %s, %s, %s, %s, %s, %s, %s)"
             values = (self.get_id(), self.get_username(), self.get_pswd(), self.get_name(), self.get_occupation(), self.get_birthday(), self.get_points(), self.get_task_comp())
             connection.run_change(sql, values)
         else:
             # update tuple table
-            sql = "update sidequests.Users set password = %s, name = %s, occupation = %s, birthday = %s, points = %s, completed_tasks = %s where username = %s"
-            values = (self.get_pswd(), self.get_name(), self.get_occupation(), self.get_birthday(), self.get_points(), self.get_task_comp(), self.get_username())
+            sql = "update sidequests.Users set username = %s, password = %s, name = %s, occupation = %s, birthday = %s, points = %s, completed_tasks = %s where  identification= %s"
+            values = (self.get_username(), self.get_pswd(), self.get_name(), self.get_occupation(), self.get_birthday(), self.get_points(), self.get_task_comp(), self.get_id())
             connection.run_change(sql, values)
     
     def remove(self, user, pwd):
@@ -109,3 +110,13 @@ class Users:
         self.set_birthday(result[0][4])
         self.set_points(result[0][5])
         self.set_task_comp(result[0][6])
+
+def get_new_id(user, pwd):
+    connection = Connection("localhost", user, pwd, "sidequests")
+    sql = "select identification from Users"
+    values = ()
+    result = connection.run_select(sql, values)
+    cleaned = []
+    for index in range(0, len(result)):
+        cleaned.append(int(result[index][0]))
+    return max(cleaned) + 1
