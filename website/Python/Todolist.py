@@ -3,9 +3,9 @@ from connection import Connection
 class Todolist:
 
 
-    def __init__(self, user_id, event_id, event_name, event_date, priority):
-        self.__user_id = user_id
+    def __init__(self, event_id, user_id, event_name, event_date, priority):
         self.__event_id = event_id
+        self.__user_id = user_id
         self.__event_name = event_name
         self.__event_date = event_date
         self.__priority = priority
@@ -45,7 +45,8 @@ class Todolist:
         connection = Connection("localhost", user, pwd, "sidequests")
         sql = "select Event_ID from Todolist;"
         values = ''
-        result = connection.run_select(sql, value)
+        cleaned = []
+        result = connection.run_select(sql, values)
         for index in range(0, len(result)-1):
             cleaned.append(result[index][0])
 
@@ -70,7 +71,7 @@ class Todolist:
         values = (self.get_event_id(),)
         result = connection.run_change(sql, values)
 
-    def load(self, user_id, event_id user, pwd):
+    def load(self, user_id, event_id, user, pwd):
         # connect to the databse
         connection = Connection("localhost", user, pwd, "sidequests")
 
