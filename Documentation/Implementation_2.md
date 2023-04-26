@@ -10,6 +10,15 @@ Github: https://github.com/cs386-03/SideQuests
 
 ## 2. Implemented Requirments
 
+**Requirement:** _As a website user, I want a categorized interface with a large calendar so I can make sense of the date and keep myself organized._ \
+**Issue:** [Issue #124](https://github.com/cs386-03/SideQuests/issues/124)\
+**Pull Request:** [Pull #141](https://github.com/cs386-03/SideQuests/pull/141)\
+**Implemented by:** Meaghan Freund\
+**Approved By:** Max Poole\
+**Print screen:** \
+![calendar_page](https://user-images.githubusercontent.com/102330088/234704758-475af211-3043-44ad-a010-4149a6763751.jpg)
+
+
 ## 3. Tests
 
 ## 4. Demo
