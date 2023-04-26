@@ -10,6 +10,11 @@ server.get('/do_a_random', (req, res) => {
   res.send(`Your number is: ${Math.floor(Math.random() * 100) + 1}`)
 })
 
+// handle the POST request from sign up page to login page
+server.post('/signup/signup.py', (req, res) => {
+  console.log("Post successful");
+  res.redirect("../index.html");
+})
 
 // Setup static page serving for all the pages in "public"
 const publicServedFilesPath = path.join(__dirname, 'public')
