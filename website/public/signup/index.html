@@ -28,15 +28,12 @@
             </div>
             <div class="panel right">
                 <h1>Sign Up</h1>
-                <form>
+                <form action="signup.py" method="POST">
                     <label for="usernameID">Username:</label><br>
                     <input type="text" id="usernameID" name="username"><br>
                     <label for="passwordID">Password:</label><br>
                     <input type="password" id="passwordID" name="password"><br>
-                    <label for="passwordIDReEnter">Re-enter Password:</label><br>
-                    <input type="password" id="passwordIDReEnter" name="passwordReEnter"><br>
-                    <a id="signUp" href="../index.html">
-                        Sign Up</a><br><br><br>
+                    <input id="signUp" type="submit" value="Sign Up"><br>
                     <a id="logIn" href="../index.html">
                         Already a user? Log In</a>
                 </form>
