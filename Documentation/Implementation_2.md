@@ -20,6 +20,11 @@ Github: https://github.com/cs386-03/SideQuests
 
 
 ## 3. Tests
+**Test Framework:** For our tests, we used the framework Jest, which can be accessed [here](https://jestjs.io/docs/getting-started). \
+**Tests Folder:** The folder containing the tests can be accessed [here](https://github.com/cs386-03/SideQuests/tree/main/Tests). It contains the tests from the previous implementation, as well as three new tests. \
+**Examples:** One thing we tested is a function that sorts a given array using the Bubble Sort algorithm. This function is used to sort a user's To-Do list items by due date. We also tested a function that generates a new unique ID number, given a list of the existing ID's from the database. It finds the largest ID in the list, adds 1 to it, and returns it, creating a unique ID number. \
+**Print screen:** \
+![Test Results](Test2Results.JPG)
 
 ## 4. Demo
 
