@@ -20,7 +20,6 @@ server.post('/index.html', (req, res) => {
   var username = req.body.username
   var password = req.body.password
 
-  // NEED TO WRITE get_new_id()
   var name = '"name"'
   var occupation = '"occupation"'
   var birthday = '"2023-04-26"'
@@ -50,38 +49,57 @@ server.post('/index.html', (req, res) => {
   res.redirect("../index.html");
 })
 
-// for some reason the data won't return can you look but it should get 
-// greatest value of id + 1 in the new_id variable
-function get_new_id(){
-  con.connect(function(err) {
-    if (err) throw err;
-    var sql = `select identification from Users`;
-    con.query(sql, function (err, result, fields) {
-      if (err) throw err;
-      n = []
-      for (let i = 0; i < result.length; i++){
-        n.push(result[i].identification);
-      }
-      con.end();
-      var new_id = (Math.max(...n) + 1);
-      return new_id;
-    });
-  });
-}
-
 // handle the POST request from login page to homepage
 server.post('/homepage/index.html', (req, res) => {
   console.log("Post successful");
-  var username = req.body.username
-  var password = req.body.password
+  var given_username = req.body.username
+  var given_password = req.body.password
 
-  // TO DO: 
-  // get actual username and password from database
-  // compare them
-  // if match: redirect to homepage
-  // if not match: do not redirect, add inner html with error message
+  // get list of usernames
+  con.getConnection(function(err) {
+    if (err) throw err;
+    console.log("connected to get usernames");
+    var sql1 = `select username from users`;
+    con.query(sql1, function (err, result) {
+      if (err) throw err;
+      n = []
+      for (let i = 0; i < result.length; i++){
+        n.push(result[i].username);
+      }
+      console.log(n);
 
-  res.redirect("/homepage/index.html");
+      // if given username is in the list
+      if (n.includes(given_username)) {
+        var username = given_username;
+
+        // get the real password for the username
+        var sql2 = `select password from users where username='${username}'`
+        con.query(sql2, function (err, result) {
+          console.log("made second query");
+          if (err) throw err;
+          password = result[0].password;
+          console.log(password);
+
+          // if the passwords match, redirect to homepage
+          if ( password === given_password ) {
+            res.redirect("./index.html");
+          }
+
+          // passwords do not match -> reload login page
+          else {
+            res.redirect("../index.html");
+          }
+        });
+      }
+
+      // username does not exist -> reload login page
+      else {
+        res.redirect("../index.html");
+      }
+
+    });
+
+  });
 })
 
 // Setup static page serving for all the pages in "public"
