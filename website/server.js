@@ -8,7 +8,7 @@ server.use(logger('dev'))
 
 const con = mysql.createConnection({
   host: "localhost",
-  user: "mainhost",
+  user: "root",
   password: "Sidequests123!!",
   database: "sidequests"
 });
@@ -23,7 +23,7 @@ server.post('/index.html', (req, res) => {
   // NEED TO WRITE get_new_id()
   var name = "name"
   var occupation = "occupation"
-  var birthday = "0000-00-00"
+  var birthday = "2023-04-26"
   var points = 0
   var tasks_completed = 0
 
