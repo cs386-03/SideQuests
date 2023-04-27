@@ -6,19 +6,21 @@ const server = express()
 server.use(express.urlencoded({'extended': true}))
 server.use(logger('dev'))
 
-const con = mysql.createConnection({
-  host: "127.0.0.1",
-  user: "root",
-  password: "Sidequests123!!",
-  database: "sidequests",
-  port: 3306
-});
+
 
 // handle the POST request from sign up page to login page
 server.post('/index.html', (req, res) => {
   console.log("Post successful");
   var username = req.body.username
   var password = req.body.password
+
+  const con = mysql.createConnection({
+    host: "127.0.0.1",
+    user: "root",
+    password: "Sidequests123!!",
+    database: "sidequests",
+    port: 3306
+  });
 
   // NEED TO WRITE get_new_id()
   var name = '"name"'
@@ -43,7 +45,6 @@ server.post('/index.html', (req, res) => {
       con.query(sql, function (err, result) {
         if (err) throw err;
         console.log("1 record inserted");
-        con.end();
       });
     });
   });
