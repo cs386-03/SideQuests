@@ -8,6 +8,7 @@ server.use(logger('dev'))
 
 const con = mysql.createConnection({
   host: "localhost",
+  port: 3306,
   user: "mainhost",
   password: "Sidequests123!!",
   database: "sidequests"
