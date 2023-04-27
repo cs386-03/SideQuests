@@ -18,6 +18,15 @@ Github: https://github.com/cs386-03/SideQuests
 **Print screen:** \
 ![calendar_page](https://user-images.githubusercontent.com/116768865/234735442-5bc46e86-b748-45ba-8270-eef9d376e610.png)
 
+**Requirement:** _As a student, I want to be able to save my data under a login so I can access it on multiple divices._ \
+**Issue:** [Issue #131](https://github.com/cs386-03/SideQuests/issues/131)\
+**Pull Requests:** [Pull #153](https://github.com/cs386-03/SideQuests/pull/153) [Pull #165](https://github.com/cs386-03/SideQuests/pull/165)\
+**Implemented By:** Lauren Farr\
+**Approved By:** Josh VanderMeer\
+**Print screen:** \
+![Sign Up Screen](D6_signuppage.JPG)
+![Log In Screen](D6_loginpage.JPG)
+
 
 ## 3. Tests
 **Test Framework:** For our tests, we used the framework Jest, which can be accessed [here](https://jestjs.io/docs/getting-started). \
