@@ -7,10 +7,11 @@ server.use(express.urlencoded({'extended': true}))
 server.use(logger('dev'))
 
 const con = mysql.createConnection({
-  host: "localhost",
+  host: "127.0.0.1",
   user: "root",
   password: "Sidequests123!!",
-  database: "sidequests"
+  database: "sidequests",
+  port: 3306
 });
 
 // handle the POST request from sign up page to login page
@@ -21,9 +22,9 @@ server.post('/index.html', (req, res) => {
 
   var id = 818
   // NEED TO WRITE get_new_id()
-  var name = "name"
-  var occupation = "occupation"
-  var birthday = "2023-04-26"
+  var name = '"name"'
+  var occupation = '"occupation"'
+  var birthday = '"2023-04-26"'
   var points = 0
   var tasks_completed = 0
 
@@ -44,6 +45,25 @@ server.post('/index.html', (req, res) => {
 
   res.redirect("../index.html");
 })
+
+// for some reason the data won't return can you look but it should get 
+// greatest value of id + 1 in the new_id variable
+function get_new_id(){
+  con.connect(function(err) {
+    if (err) throw err;
+    var sql = `select identification from Users`;
+    con.query(sql, function (err, result, fields) {
+      if (err) throw err;
+      n = []
+      for (let i = 0; i < result.length; i++){
+        n.push(result[i].identification);
+      }
+      con.end();
+      var new_id = (Math.max(...n) + 1);
+      return new_id;
+    });
+  });
+}
 
 // handle the POST request from login page to homepage
 server.post('/homepage/index.html', (req, res) => {
