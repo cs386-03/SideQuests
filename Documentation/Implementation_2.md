@@ -16,7 +16,7 @@ Github: https://github.com/cs386-03/SideQuests
 **Implemented by:** Meaghan Freund\
 **Approved By:** Max Poole\
 **Print screen:** \
-![calendar_page](https://user-images.githubusercontent.com/102330088/234704758-475af211-3043-44ad-a010-4149a6763751.jpg)
+![calendar_page](https://user-images.githubusercontent.com/116768865/234735059-17f473c0-3906-4582-9956-2dc95ec7d1fd.png)
 
 
 ## 3. Tests
