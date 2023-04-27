@@ -20,7 +20,6 @@ server.post('/index.html', (req, res) => {
   var username = req.body.username
   var password = req.body.password
 
-  var id = 818
   // NEED TO WRITE get_new_id()
   var name = '"name"'
   var occupation = '"occupation"'
@@ -30,16 +29,22 @@ server.post('/index.html', (req, res) => {
 
   con.connect(function(err) {
     if (err) throw err;
-    console.log("Connected!");
-
-    var sql = `INSERT INTO Users (identification, username, password, name, 
-      occupation, birthday, points, completed_tasks) values (${id}, "${username}", 
-      "${password}", ${name}, ${occupation}, ${birthday}, ${points}, ${tasks_completed})`;
-
-    con.query(sql, function (err, result) {
+    var sql1 = `select identification from Users`;
+    con.query(sql1, function (err, result) {
       if (err) throw err;
-      console.log("1 user inserted");
-      con.end();
+      n = []
+      for (let i = 0; i < result.length; i++){
+        n.push(result[i].identification);
+      }
+      var id = (Math.max(...n) + 1);
+      var sql = `INSERT INTO sidequests.Users (identification, username, password, name, 
+        occupation, birthday, points, completed_tasks) values (${id}, "${username}", 
+        "${password}", ${name}, ${occupation}, ${birthday}, ${points}, ${tasks_completed})`;
+      con.query(sql, function (err, result) {
+        if (err) throw err;
+        console.log("1 record inserted");
+        con.end();
+      });
     });
   });
 
