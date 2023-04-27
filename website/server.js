@@ -8,8 +8,7 @@ server.use(logger('dev'))
 
 const con = mysql.createConnection({
   host: "localhost",
-  port: 3306,
-  user: "mainhost",
+  user: "root",
   password: "Sidequests123!!",
   database: "sidequests"
 });
@@ -24,7 +23,7 @@ server.post('/index.html', (req, res) => {
   // NEED TO WRITE get_new_id()
   var name = "name"
   var occupation = "occupation"
-  var birthday = "0000-00-00"
+  var birthday = "2023-04-26"
   var points = 0
   var tasks_completed = 0
 
@@ -33,16 +32,15 @@ server.post('/index.html', (req, res) => {
     console.log("Connected!");
 
     var sql = `INSERT INTO Users (identification, username, password, name, 
-      occupation, birthday, points, completed_tasks) values (${id}, ${username}, 
-      ${password}, ${name}, ${occupation}, ${birthday}, ${points}, ${tasks_completed})`;
+      occupation, birthday, points, completed_tasks) values (${id}, "${username}", 
+      "${password}", ${name}, ${occupation}, ${birthday}, ${points}, ${tasks_completed})`;
 
     con.query(sql, function (err, result) {
       if (err) throw err;
       console.log("1 user inserted");
+      con.end();
     });
   });
-
-  con.end();
 
   res.redirect("../index.html");
 })
