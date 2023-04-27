@@ -72,19 +72,18 @@ input {
   margin-bottom: 20px;
 }
 
-#signIn {
+#login {
   color: white;
   background-color: #8DBFC9;
   text-decoration: none;
   padding: 10px 16px;
-  margin: 10px;
+  height: 40px;
 }
 #signUp {
   color: white;
   background-color: #071A52;
   text-decoration: none;
   padding: 10px 16px;
-  margin: 10px;
 }
 
 
