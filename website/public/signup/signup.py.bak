@@ -20,10 +20,10 @@ password = form.getvalue('password')
 user_id = get_new_id(username, password);
 
 # create a new user object
-new_user = Users(str(user_id), username, password, "name", "occupation", "2023-04-15", "0", "0")
+new_user = Users(str(user_id), username, password, "name", "occupation", "2023-04-15", "0, "0")
+new_user = Users("12", "username", "password", "name", "occupation", "2023-04-15", "0, "0")
 
 # save that user to the database
 database_username = "root"
-database_password = "Sidequests123!!"
+database_password = "vander2003"
 new_user.save(database_username, database_password)
-
