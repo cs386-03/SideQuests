@@ -5,20 +5,22 @@ console.log(localStorage.getItem("morePoints"));
 if (localStorage.getItem("morePoints") === 'undefined') {
     var pointTotal = 0;
     var taskTotal = 0;
+    var taskStartTotal = 0
     document.getElementById("pointCount").innerText = pointTotal;
     document.getElementById("taskCount").innerText = taskTotal;
+    document.getElementById("taskStartCount").innerText = taskStartTotal;
 }
 else {
     pointTotal = 0;
     pointTotal += Number(localStorage.getItem("morePoints"));
     taskTotal = 0;
     taskTotal += Number(localStorage.getItem("tasks"));
+    taskStartTotal = 0
+    taskStartTotal += Number(localStorage.getItem("startTasks"))
     document.getElementById("pointCount").innerText = pointTotal;
     document.getElementById("taskCount").innerText = taskTotal;
+    document.getElementById("taskStartCount").innerText = taskStartTotal;
 }
-
-
-
 
 function showDropdown() {
     document.getElementById("tasks").style.display = "block";
@@ -213,7 +215,18 @@ function totalTasks() {
 function totalStartedTasks() {
     taskStartTotal = taskStartTotal + 1;
 
-    document.getElementById("taskStartCount").innerText = taskStartTotal;
+    localStorage.setItem("startTasks", taskTotal);
+
+
+    if (localStorage.getItem("startTasks") === 'undefined') {
+        document.getElementById("taskStartCount").innerText = taskStartTotal;
+
+    }
+    else {
+        localStorage.setItem("startTasks", taskStartTotal);
+        document.getElementById("taskStartCount").innerText = localStorage.getItem('startTasks');
+
+    }
 
     return taskStartTotal;
 
@@ -421,6 +434,7 @@ function sortByDate(){
         addIndex = addIndex + 1;
     }
 
+    localStorage.setItem("list",tempList);
     tempList = [];
     
 }
