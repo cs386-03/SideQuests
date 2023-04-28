@@ -1,6 +1,13 @@
-function isBirthday(dateOfBirth, date){
+module.exports = class User {
+  constructor(name, dateOfBirth) {
+    this.name = name;
+    this.dateOfBirth = dateOfBirth;
+  }
+
+  isBirthday() {
     let currentDay, currentMonth, currentYear;
     let birthDate, birthMonth, birthYear, age;
+    const date = new Date();
   
     // Get current day
     currentDay = date.getDate();
@@ -12,25 +19,24 @@ function isBirthday(dateOfBirth, date){
     currentYear = date.getFullYear();
   
     // get input day
-    birthDate = Number(dateOfBirth.slice(-2));
+    birthDate = Number(this.dateOfBirth.slice(-2));
   
     // get input month
-    birthMonth = Number(dateOfBirth.slice(5, 7));
+    birthMonth = Number(this.dateOfBirth.slice(5, 7));
   
     // get input year
-    birthYear = Number(dateOfBirth.slice(0, 4));
+    birthYear = Number(this.dateOfBirth.slice(0, 4));
   
     // get age
     age = currentYear - birthYear;
   
     // check if today is user birthday
     if (currentDay === birthDate && currentMonth === birthMonth) {
-      console.log("Happy Birthday!");
-      
       return true;
     } else {
       return false;
     }
   }
+}
 
-module.exports = isBirthday;
+
