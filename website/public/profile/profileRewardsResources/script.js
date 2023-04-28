@@ -22,6 +22,7 @@ const description = document.querySelector(".description");
 const birthdayMes = document.querySelector(".birthdayMessage");
 
 // Input and label values
+const userPoints = localStorage.getItem("points");
 const nameInput = document.querySelector(".nameInput");
 const jobInput = document.querySelector(".jobInput");
 const dobInput = document.querySelector(".dobInput");
@@ -106,12 +107,14 @@ const changeTrophyName = (index) => {
 // Create Reward table
 const createTable = () => {
   // declare variables
-  let userRewards = new Rewards(120);
+  let userRewards = new Rewards(userPoints);
   let index, tdIndex, tableDataHTML, row, cell, divClassHTML, loopCount;
   let rowIndex = 0,
     cellIndex = 0;
   let points = [1, 10, 25, 50, 75, 100];
   let description, trophyName;
+
+  localStorage.setItem("morePoints", userPoints)
 
   // empty table contents
   table.innerHTML = "";
@@ -123,11 +126,11 @@ const createTable = () => {
   for (index = 0; index < points.length; index++) {
     // check how many points user has compared to point goals
     if (
-      userRewards.pointValue >= index &&
-      userRewards.pointValue <= index + 1
+      userRewards.pointValue >= points[index] &&
+      userRewards.pointValue <= points[index + 1]
     ) {
       // set loop count according to points
-      loopCount = index;
+      loopCount = index + 1;
     }
     // otherwise check if user has atleast 100 points
     else if (userRewards.pointValue >= 100) {
