@@ -35,6 +35,14 @@ Github: https://github.com/cs386-03/SideQuests
 **Print screen:** \
 ![todo list sort](sortedList.png)
 
+**Requirement:** _As a student, I want be able to save my data so I can come back and view it later._ \
+**Issue:** [Issue #125](https://github.com/cs386-03/SideQuests/issues/125)\
+**Pull Request:** [Pull #158](https://github.com/cs386-03/SideQuests/pull/158)\
+**Implemented by:** Joshua VanderMeer\
+**Approved By:** Lauren Farr\
+**Print screen:** \
+![todo list sort](database.png)
+
 
 ## 3. Tests
 **Test Framework:** For our tests, we used the framework Jest, which can be accessed [here](https://jestjs.io/docs/getting-started). \
