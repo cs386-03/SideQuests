@@ -45,6 +45,8 @@ div.header {
 
 div.panel.right {
   margin: 30px auto;
+  margin-right: 10%;
+  width: 75%;
   color: #8DBFC9;
   text-align: center;
   grid-area: panright;
@@ -52,11 +54,10 @@ div.panel.right {
 }
 
 div.panel.left {
-  margin: 30px;
-  margin-left: 60px;
-  width: 500px;
+  margin: 30px auto;
+  margin-left: 15%;
+  width: 95%;
   grid-area: panleft;
-  min-height: 300px;
   text-align: center;
   border: 2px solid #8DBFC9;
   overflow: hidden;
