@@ -27,6 +27,14 @@ Github: https://github.com/cs386-03/SideQuests
 ![Sign Up Screen](D6_signuppage.JPG)
 ![Log In Screen](D6_loginpage.JPG)
 
+**Requirement:** _As a student, I want to see an organized to-do list by date so that I know what tasks need to be focused on first._ \
+**Issue:** [Issue #169](https://github.com/cs386-03/SideQuests/issues/169)\
+**Pull Request:** [Pull #142](https://github.com/cs386-03/SideQuests/pull/142)\
+**Implemented by:** Max Poole\
+**Approved By:** Samantha Madderom\
+**Print screen:** \
+![todo list sort](sortedList.png)
+
 
 ## 3. Tests
 **Test Framework:** For our tests, we used the framework Jest, which can be accessed [here](https://jestjs.io/docs/getting-started). \
@@ -42,3 +50,5 @@ Github: https://github.com/cs386-03/SideQuests
 As a team, we kept our code quality neat and readable by organizing by section for the webpage and using descriptive variables to be able to understand each other's code. As our website has different pages, it was necessary to keep the same coding conventions for each page to have a cohesive website. For example, every page has different sections displaying varying subjects, in which we coded using the same manner of separating these components, such as div classes for organization. In addition, we used comments to set apart the portions we worked on or separate ideas in general to be able to read what we each contributed and to reread the each code file with ease. Our comments were written ourselves to provide human descriptions that are easy for us to comprehend, rather than automated comments. As for variables and functions, our functions are named literally on what they do so that there is no confusion and variables have simple yet specific enough names to make it easy to differentiate. If numbers are used for variables, they are used in such a manner that they are necessary and are still readable, given the context of the code. Overall, we kept simple, but descriptive, naming conventions and ensured that our code could be read and understood through comments, especially for others in the group that did not write the code.
 
 ## 6. Lessons Learned
+
+For the second implementation we have learned a lot of important lessons for developing a project. We learned how valuable it is to have meetings sooner in the week to collaborate earlier in order to accomplish more work throughout the week. We also learned how beneficial an extra meeting or two can be during a busy week. The more communication we had as a team the more productive we were. We also discovered that assigning individual tasks can limit some communication and that having pairs work on tasks can increase productivity and cause a less frustrating workload. Starting earlier on the deliverables made the project less stressful and more rewarding and we all functioned better as a team this time around. This project has been an eye opening experience for what to expect when building a project from the ground up and how in depth the process can be even outside of just coding. We all think this was a very beneficial experience to have.
