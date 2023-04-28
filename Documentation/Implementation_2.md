@@ -27,6 +27,14 @@ Github: https://github.com/cs386-03/SideQuests
 ![Sign Up Screen](D6_signuppage.JPG)
 ![Log In Screen](D6_loginpage.JPG)
 
+**Requirement:** _As a student, I want to see an organized to-do list by date so that I know what tasks need to be focused on first._ \
+**Issue:** [Issue #169](https://github.com/cs386-03/SideQuests/issues/169)\
+**Pull Request:** [Pull #142](https://github.com/cs386-03/SideQuests/pull/142)\
+**Implemented by:** Max Poole\
+**Approved By:** Samantha Madderom\
+**Print screen:** \
+![todo list sort](sortedList.png)
+
 
 ## 3. Tests
 **Test Framework:** For our tests, we used the framework Jest, which can be accessed [here](https://jestjs.io/docs/getting-started). \
