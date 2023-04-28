@@ -36,7 +36,7 @@ server.post('/index.html', (req, res) => {
         n.push(result[i].identification);
       }
       var id = (Math.max(...n) + 1);
-      var sql = `INSERT INTO sidequests.Users (identification, username, password, name, 
+      var sql = `INSERT INTO Users (identification, username, password, name, 
         occupation, birthday, points, completed_tasks) values (${id}, "${username}", 
         "${password}", ${name}, ${occupation}, ${birthday}, ${points}, ${tasks_completed})`;
       con.query(sql, function (err, result) {
@@ -59,7 +59,7 @@ server.post('/homepage/index.html', (req, res) => {
   con.getConnection(function(err) {
     if (err) throw err;
     console.log("connected to get usernames");
-    var sql1 = `select username from users`;
+    var sql1 = `select username from Users`;
     con.query(sql1, function (err, result) {
       if (err) throw err;
       n = []
@@ -73,7 +73,7 @@ server.post('/homepage/index.html', (req, res) => {
         var username = given_username;
 
         // get the real password for the username
-        var sql2 = `select password from users where username='${username}'`
+        var sql2 = `select password from Users where username='${username}'`
         con.query(sql2, function (err, result) {
           console.log("made second query");
           if (err) throw err;
