@@ -1,8 +1,22 @@
 // dropdown
-pointTotal = 0;
-taskTotal = 0;
-document.getElementById("pointCount").innerText = pointTotal;
-document.getElementById("taskCount").innerText = taskTotal;
+console.log(localStorage.getItem("morePoints"));
+// localStorage.setItem("morePoints", 'undefined')
+
+if (localStorage.getItem("morePoints") === 'undefined') {
+    var pointTotal = 0;
+    var taskTotal = 0;
+    document.getElementById("pointCount").innerText = pointTotal;
+    document.getElementById("taskCount").innerText = taskTotal;
+}
+else {
+    pointTotal = 0;
+    pointTotal += Number(localStorage.getItem("morePoints"));
+    taskTotal = 0;
+    taskTotal += Number(localStorage.getItem("tasks"));
+    document.getElementById("pointCount").innerText = pointTotal;
+    document.getElementById("taskCount").innerText = taskTotal;
+}
+
 
 
 
@@ -158,14 +172,37 @@ function totalPoints( points ) {
 
     pointTotal = points + pointTotal;
 
-    document.getElementById("pointCount").innerText = pointTotal;
+    localStorage.setItem("points", pointTotal);
+
+    if (localStorage.getItem("morePoints") === 'undefined') {
+        document.getElementById("pointCount").innerText = pointTotal;
+
+    }
+    else {
+        localStorage.setItem("morePoints", pointTotal);
+        document.getElementById("pointCount").innerText = localStorage.getItem("morePoints");
+    }
+
+
     return pointTotal;
 }
 
 function totalTasks() {
     taskTotal = taskTotal + 1;
 
-    document.getElementById("taskCount").innerText = taskTotal;
+    localStorage.setItem("tasks", taskTotal);
+
+
+    if (localStorage.getItem("tasks") === 'undefined') {
+        document.getElementById("taskCount").innerText = taskTotal;
+
+    }
+    else {
+        localStorage.setItem("tasks", taskTotal);
+        document.getElementById("taskCount").innerText = localStorage.getItem('tasks');
+
+    }
+
 
     return taskTotal;
 
