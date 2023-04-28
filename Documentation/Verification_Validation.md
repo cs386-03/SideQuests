@@ -1,6 +1,9 @@
 # Deliverable 7 - Project Verification and Validation
 
 ## 1. Decription
+Sidequests are an online website allowing users to form a to-do list of tasks they must complete. As users add tasks to the to-do list they get to choose the priority level of their task and the due date of the task. From here a priority 1 task will earn the user 3 points on completion and the priority 3 will net 1 point for the user. The user will be able to collect points and earn trophies to show off how productive they have been in completing tasks.   
+
+From Here the user can go to their profile page to view the rewards that they have earned based off of the task they have completed. These rewards will appear on the user's bookshelf of all the rewards. The goal of this website is to help users say organized and on track to complete all tasks they have in life with a fun twist. Users will have a reward-based system for keeping their life on track. 
 
 ## 2. Verification
 
