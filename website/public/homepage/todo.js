@@ -141,7 +141,8 @@ function newListItem() {
             totalPoints( points );
         }
     }
-
+    
+    totalStartedTasks();
 }
 
 
@@ -171,6 +172,15 @@ function totalTasks() {
 
 }
 
+
+function totalStartedTasks() {
+    taskStartTotal = taskStartTotal + 1;
+
+    document.getElementById("taskStartCount").innerText = taskStartTotal;
+
+    return taskStartTotal;
+
+}
 
 
 function sortByDate(){
