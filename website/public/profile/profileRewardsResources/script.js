@@ -114,7 +114,7 @@ const createTable = () => {
   let points = [1, 10, 25, 50, 75, 100];
   let description, trophyName;
 
-  localStorage.setItem("morePoints", userPoints)
+  localStorage.setItem("morePoints", userPoints);
 
   // empty table contents
   table.innerHTML = "";
@@ -250,6 +250,33 @@ const closePopup = () => {
 
 /////////////////////////////ON SCREEN EVENTS//////////////////////////////////
 
+// check if names are stored
+if (!localStorage.getItem("name")) {
+  nameVal.textContent = "Name:";
+} 
+else {
+  nameVal.textContent += localStorage.getItem("name");
+  console.log(localStorage.getItem("name"));
+}
+
+// check if job is sotred
+if (!localStorage.getItem("job")) {
+  jobVal.textContent = "Occupation:";
+} 
+else {
+  jobVal.textContent += localStorage.getItem("job");
+  console.log(localStorage.getItem("job"));
+}
+
+// check if birth date is stored
+if (!localStorage.getItem("dob")) {
+  dobVal.textContent = "Date of Birth:";
+}
+else {
+  console.log(localStorage.getItem("dob"));
+  dobVal.textContent += localStorage.getItem("dob");
+}
+
 // Shows box for profile information
 editBtn.addEventListener("click", (event) => {
   // Stop page from refreshing on press
@@ -287,12 +314,26 @@ submitBtn.addEventListener("click", (event) => {
   nameInput.value === "Name: "
     ? ""
     : (nameVal.textContent += ` ${nameInput.value}`);
+
+  nameInput.value === "Name: "  
+    ? false
+    : localStorage.setItem("name", ` ${nameInput.value}`);
+
   jobInput.value === "Occupation: "
     ? ""
     : (jobVal.textContent += ` ${jobInput.value}`);
+
+  jobInput.value === "Occupation: "
+    ? false
+    : localStorage.setItem("job",` ${jobInput.value}`);
+
   dobInput.value === "Date of Birth: "
     ? ""
     : (dobVal.textContent += ` ${dobInput.value}`);
+
+  dobInput.value === "Date of Birth: "
+    ? false
+    : localStorage.setItem("dob", ` ${dobInput.value}`);
 
   // close form box
   formBox.classList.add("hidden");
