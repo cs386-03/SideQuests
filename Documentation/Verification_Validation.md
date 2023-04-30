@@ -68,8 +68,57 @@ From here, the user can go to their profile page to view the rewards they have e
 - Does seeing how many tasks you started and finished encourage you to finish more?
     - Somewhat, I would get rid of the "tasks started" since it seems too cluttered and the points at the bottom feel irrelevant because of the amount of text.
 
+
+**Daniel Bihnam**
+- What visually stood out to you on the site?
+    - I like the way the trophies hover and float.
+- Is there anything that can be improved to make it more visually appealing?
+    - I would like the site to have more color. It seems a little monotone and could have a pop of color.
+- Was the system easy to navigate?
+    - Yes the system was easy to navigate and was well labeled.
+- Is there anything that was confusing at first?
+    - The login vs sign up option was a little unclear at the beginning but was not too hard to understand.
+- Do the rewards provide incentive?
+    - I think the trophies are very cool but I feel like there isnt that much too them.
+- How could it feel more rewarding?
+    - If there were more ways to earn trophies it would be more rewarding.
+- Does the website feel usable for multiple areas of your life to plan?
+    - Yes the website feels versatile and usable for a lot of different areas of life.
+- Did the trophies feel like a good reward to strive to get?
+    - Yes the trophies are a good reward and are satisfying to earn.
+- Does seeing how many tasks you started and finished encourage you to finish more?
+    - Yes, trying to keep the number of completed tasks in line with the number of started tasks is good ecouragement to keep completing the tasks.
+
+
+**Logan Gerard Wilson**
+- What visually stood out to you on the site?
+    - The dark mode color scheme was nice and the trophies look nice.
+- Is there anything that can be improved to make it more visually appealing?
+    - The site could have more color variety to it.
+- Was the system easy to navigate?
+    - Yes the system made sense and wasnt difficult to navigate
+- Is there anything that was confusing at first?
+    - The button to fill out the profile was not super obvious at first but it wasn't too hard to find.
+- Do the rewards provide incentive?
+    - The trophies are good but it could be more incentivising.
+- How could it feel more rewarding?
+    - The site could show how many more points you need for the next trophy so you can see yourself getting closer and closer to the next one.
+- Does the website feel usable for multiple areas of your life to plan?
+    - Yes the website could be used for school or day to day house tasks so it's versatile.
+- Did the trophies feel like a good reward to strive to get?
+    - Yes the trophies looked nice and it was cool to get nicer and nicer ones but I wish there were more ways to earn them.
+- Does seeing how many tasks you started and finished encourage you to finish more?
+    - Yes it helped to want to complete the tasks that I started.
+
 ### Reflections
 **Lucy:**  
 The interview with Lucy made us realize that this website may not work for everyone. Not everyone is motivated through positive reinforcement and it may not click for certain people. She states that it gets the job done, but she was very turned off by the color choices as not much stood out to her visually. With this in mind, the website could probably have a bigger variety in colors in general to better pop out to users or we could implement options to change the colors of the webpage. In addition, she was a bit confused on the buttons and their functionality for the to-do list, being confused on what the complete and delete options for each task, not realizing that the complete button gets rid of the task and adds points. Overall, we could have spent a bit more time deciding design choices and made items a bit more clear on what they do.
 
-**Summary:**  
+**Daniel:**  
+The interview with Daniel let us have a lot of insight to the user experience. The rewards system seems to be on the right track when starting out but it seems that there could be more to it. He thinks that the rewards could come from more than just the points and there should be more ways to earn rewards. He also thinks that the color scheme of the website could have more variety. This was a common theme through most of the interviews, so it seems that in the future the website could be updated to have more color options or themes. The website in general serves a good purpose and Daniel can see it being useful for planning out his daily tasks in different areas of life. Overall the functionality of the website seems to be in a good place but the design could be more appealing.
+
+**Logan:**  
+The interview with Logan helped us gain a better understanding of the pros and cons of our website. Much of Logan's opinions alligned with the other interviews and helped us realize what we can do to improve. He liked the dark mode scheme of the website, but also agreed that it is a little monotone and could use some variety that is still along the dark mode theme. He thinks the site was easy to use and labeled well. Logan thought that the trophies could also use a little bit more to them. He suggested that the website could show how many points until the next trophy to encourage the user to keep getting points to get closer and closer to the next reward. Overall Logan thought the website's functionality was good but the rewards could be more interconnected to the user experience.
+
+
+**Summary:**    
