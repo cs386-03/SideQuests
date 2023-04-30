@@ -52,6 +52,7 @@ Github: https://github.com/cs386-03/SideQuests
 ![Test Results](Test2Results.JPG)
 
 ## 4. Demo
+A demo of the system running can be downloaded [here](https://github.com/cs386-03/SideQuests/blob/main/Demos/Demo2.mov)
 
 ## 5. Code Quality
 
