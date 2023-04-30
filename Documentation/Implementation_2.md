@@ -43,6 +43,15 @@ Github: https://github.com/cs386-03/SideQuests
 **Print screen:** \
 ![todo list sort](database.png)
 
+**Requirement:** _As a website user I want to see what rewards I've earned._\
+**Issue:** [Issue #126](https://github.com/cs386-03/SideQuests/issues/126)\
+**Pull Request:** [Pull #127](https://github.com/cs386-03/SideQuests/pull/127)\
+**Implemented by:** Caden Tedeschi\
+**Approved By:** Joshua VanderMeer\
+**Print screen:**\
+![point total](totalPoints.png)
+![rewards for point total](rewardsForPoints.png)
+
 
 ## 3. Tests
 **Test Framework:** For our tests, we used the framework Jest, which can be accessed [here](https://jestjs.io/docs/getting-started). \
